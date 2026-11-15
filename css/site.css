@@ -41,6 +41,11 @@ sub { position: static; font-size: .72em; line-height: 0; vertical-align: -.25em
 .hero .publication-title { font-size: clamp(32px, 4.2vw, 48px); }   /* the template's 3 rem on wide screens, smaller on phones */
 .eqnote { color: var(--muted); margin-top: 4px; }
 .publication-links .button[aria-disabled="true"], .footer .icon-link[aria-disabled="true"] { opacity: .5; pointer-events: none; }   /* placeholders until the paper, code and data are public */
+.footer { padding: 2.5rem 1.5rem 3rem; }
+.footer .content p { margin-bottom: .45em; color: var(--ink-2); }
+.footer .legal { font-size: 13px; line-height: 1.55; color: var(--muted); }   /* licence and data notes: present, not prominent */
+.footer .legal a { color: inherit; text-decoration: underline; text-decoration-color: #c4c4cc; text-underline-offset: 2px; }
+.footer .legal a:hover { color: var(--ink); }
 .tldr { max-width: var(--measure); margin: 22px auto 0; font-size: 16.5px; line-height: 1.55; color: var(--ink-2); text-align: center; }
 .tldr b { color: var(--ink); }
 
