@@ -72,7 +72,7 @@
   // when it has been rendered; the timeline under the player follows the minute. Without the film, the minute alone.
   async function initTeaser(c) {
     let cc = c;
-    try { const f = await loadJSON('media/timing/timing_demo_full.json'); if (f && f.intro_s) cc = { ...c, clip: f.clip, poster: f.poster || c.poster, captions: f.captions || null, intro: f.intro_s }; } catch (e) { /* no film built: the minute alone */ }
+    try { const f = await loadJSON('media/timing/timing_demo_full.json'); if (f && f.intro_s) cc = { ...c, clip: f.clip, poster: f.poster || c.poster, captions: f.captions || null, intro: f.intro_s, has_audio: f.has_audio ?? c.has_audio }; } catch (e) { /* no film built: the minute alone */ }
     const now = $('.tnow');
     const p = player($('#tv'), $('#ttl'), { pps: PPS }, (n, cs) => {
       now.classList.toggle('off', p.inIntro());   // the clock and the line appear when the minute begins
