@@ -1,0 +1,5003 @@
+{
+ "generated_utc": "2026-10-27T05:08:51+00:00",
+ "provenance": {
+  "wtag": "WTaG annotation layers frozen 2026-09-22 (bench digest 13349303bc6da65c); all four layers human-reviewed. Transcripts manually revised; the clips carry the full two-speaker audio track (user and instructor).",
+  "holoassist": "HoloAssist annotation layers of the 2026-09-19 release: model-proposed (four-model vote), audited; the R078 session shown here is the one with human review. Released transcripts; clips keep the released pitch-shifted audio, loudness-normalized.",
+  "media": "clips re-encoded at 854x480 H.264; captions are the released transcripts; keyframes are taken at the annotated anchors"
+ },
+ "cases": [
+  {
+   "id": "wtag_t30_hero",
+   "group": "hero",
+   "decision": null,
+   "dataset": "wtag",
+   "task": "pinwheel",
+   "session": "T30",
+   "session_duration_s": 648.869,
+   "range": [
+    57.69,
+    116.0
+   ],
+   "clip": "media/showcase/wtag_t30_hero.mp4",
+   "poster": "media/showcase/wtag_t30_hero.jpg",
+   "captions": "media/showcase/wtag_t30_hero.vtt",
+   "has_audio": true,
+   "focus": null,
+   "title": "Starting a tortilla pinwheel: placing the tortilla and choosing the spread",
+   "takeaway": "Two visible errors, a question, an approval that could have been left unsaid, and a camera view that no longer shows the task.",
+   "note": null,
+   "focal_rid": "T30_RH0000",
+   "moment_captions": {
+    "T30_RH0000": "The tortilla goes onto a plate instead of the cutting board. Guidance becomes useful at the first sign and is needed before the user moves on.",
+    "T30_R0003": "The user moves it to the board. An approval is welcome but optional: staying silent would have been fine.",
+    "T30_R0004": "A question. The answer is useful from the moment the question ends.",
+    "T30_R0005": "The jar is in hand, so what matters now is how to spread it.",
+    "T30_R0006": "A spoon, not a knife. The window closes as soon as the user switches.",
+    "T30_R0007": "The user holds up the knife and checks. A short confirmation is all that is needed.",
+    "T30_R0008": "The workspace has left the camera view: the instructor can no longer see the task."
+   },
+   "dims": null,
+   "steps": [
+    {
+     "name": "Place tortilla",
+     "kind": "step",
+     "t0": 15.453,
+     "t1": 65.689
+    },
+    {
+     "name": "Spread nut butter",
+     "kind": "step",
+     "t0": 66.098,
+     "t1": 194.959
+    }
+   ],
+   "utterances": [
+    {
+     "uid": 22512,
+     "t0": 64.03,
+     "t1": 68.15,
+     "speaker": "instructor",
+     "text": "you're gonna wanna put it on the cutting board .. not on the plate",
+     "intent": "I9",
+     "category": "Correction",
+     "attributes": {
+      "content_target": "quantity_parameter"
+     }
+    },
+    {
+     "uid": 22514,
+     "t0": 68.15,
+     "t1": 68.53,
+     "speaker": "user",
+     "text": "ok",
+     "intent": "U5",
+     "category": "Acknowledgment / Uptake",
+     "attributes": null
+    },
+    {
+     "uid": 22515,
+     "t0": 69.15,
+     "t1": 70.07,
+     "speaker": "instructor",
+     "text": "yeah like that",
+     "intent": "I2",
+     "category": "Approval",
+     "attributes": {
+      "content_target": "action_method"
+     }
+    },
+    {
+     "uid": 22516,
+     "t0": 81.8,
+     "t1": 84.81,
+     "speaker": "user",
+     "text": "uh so what's the spread\uff1f",
+     "intent": "U1",
+     "category": "Information Request",
+     "attributes": {
+      "request_type": "task_guidance"
+     }
+    },
+    {
+     "uid": 22517,
+     "t0": 86.08,
+     "t1": 88.61,
+     "speaker": "instructor",
+     "text": "uh you're going to be using peanut butter",
+     "intent": "I1",
+     "category": "Answer",
+     "attributes": {
+      "content_target": "object_tool"
+     }
+    },
+    {
+     "uid": 22518,
+     "t0": 89.73,
+     "t1": 90.25,
+     "speaker": "user",
+     "text": "ok",
+     "intent": "U5",
+     "category": "Acknowledgment / Uptake",
+     "attributes": null
+    },
+    {
+     "uid": 22519,
+     "t0": 91.86,
+     "t1": 97.92,
+     "speaker": "instructor",
+     "text": "and spread that on the tortilla with half an inch uncovered on the edges",
+     "intent": "I3",
+     "category": "Instruction",
+     "attributes": {
+      "content_target": "action_method"
+     }
+    },
+    {
+     "uid": 22520,
+     "t0": 104.22,
+     "t1": 105.72,
+     "speaker": "instructor",
+     "text": "with a butter knife",
+     "intent": "I9",
+     "category": "Correction",
+     "attributes": {
+      "content_target": "object_tool"
+     }
+    },
+    {
+     "uid": 22521,
+     "t0": 106.18,
+     "t1": 106.69,
+     "speaker": "user",
+     "text": "oh",
+     "intent": "U2",
+     "category": "Verification Question",
+     "attributes": {
+      "content_target": "object_tool"
+     }
+    },
+    {
+     "uid": 22522,
+     "t0": 107.81,
+     "t1": 108.98,
+     "speaker": "user",
+     "text": "this one?",
+     "intent": "U2",
+     "category": "Verification Question",
+     "attributes": {
+      "content_target": "object_tool"
+     }
+    },
+    {
+     "uid": 22523,
+     "t0": 110.76,
+     "t1": 111.16,
+     "speaker": "instructor",
+     "text": "yeah",
+     "intent": "I2",
+     "category": "Approval",
+     "attributes": {
+      "content_target": "object_tool"
+     }
+    },
+    {
+     "uid": 22524,
+     "t0": 113.2,
+     "t1": 115.05,
+     "speaker": "instructor",
+     "text": "and also you're going to have to look down a bit",
+     "intent": "I8",
+     "category": "Environmental Repair",
+     "attributes": {
+      "repair_target": "visual_access"
+     }
+    }
+   ],
+   "actions": [
+    {
+     "aid": 3958,
+     "kind": "action",
+     "t0": 57.69,
+     "t1": 66,
+     "description": "The user places a flat tortilla onto a white plate with both hands.",
+     "validity": "DEVIATION",
+     "task_effects": [
+      "DEVIATION_ONSET"
+     ],
+     "state_label": null,
+     "verb": "place"
+    },
+    {
+     "aid": 3959,
+     "kind": "action",
+     "t0": 66.98,
+     "t1": 70,
+     "description": "The user places a flat tortilla on the red cutting board.",
+     "validity": "VALID",
+     "task_effects": [
+      "COMPLETION",
+      "RECOVERY"
+     ],
+     "state_label": null,
+     "verb": "place"
+    },
+    {
+     "aid": 3960,
+     "kind": "action",
+     "t0": 70,
+     "t1": 73,
+     "description": "The user moves the white plate on the table.",
+     "validity": "VALID",
+     "task_effects": [
+      "NO_PROGRESS"
+     ],
+     "state_label": null,
+     "verb": "move"
+    },
+    {
+     "aid": 4019,
+     "kind": "state_event",
+     "t0": 76,
+     "t1": 86,
+     "description": "The user is inactive and waiting for the instructor's instructions on which spread to use.",
+     "validity": null,
+     "task_effects": null,
+     "state_label": "STALL",
+     "verb": null
+    },
+    {
+     "aid": 3961,
+     "kind": "action",
+     "t0": 88.96,
+     "t1": 94.41,
+     "description": "The user grabs the red-lidded jar of peanut butter from the table with their left hand.",
+     "validity": "VALID",
+     "task_effects": [
+      "PROGRESS"
+     ],
+     "state_label": null,
+     "verb": "grab"
+    },
+    {
+     "aid": 3962,
+     "kind": "action",
+     "t0": 94.51,
+     "t1": 99.2,
+     "description": "The user opens the red-lidded jar of peanut butter with both hands.",
+     "validity": "VALID",
+     "task_effects": [
+      "PROGRESS"
+     ],
+     "state_label": null,
+     "verb": "open"
+    },
+    {
+     "aid": 5253,
+     "kind": "action",
+     "t0": 102.94,
+     "t1": 105.23,
+     "description": "The user grabs a spoon with their right hand to scoop the nut butter.",
+     "validity": "DEVIATION",
+     "task_effects": [
+      "DEVIATION_ONSET"
+     ],
+     "state_label": null,
+     "verb": "grab"
+    },
+    {
+     "aid": 3963,
+     "kind": "action",
+     "t0": 105.39,
+     "t1": 114.48,
+     "description": "The user scoops nut butter from the jar using a knife",
+     "validity": "VALID",
+     "task_effects": [
+      "PROGRESS",
+      "RECOVERY"
+     ],
+     "state_label": null,
+     "verb": "scoop"
+    },
+    {
+     "aid": 5422,
+     "kind": "state_event",
+     "t0": 105.42,
+     "t1": 113.17,
+     "description": "User's view is obstructed by the peanut butter jar and hand movements while scooping, making the tortilla and workspace partially or fully out of view.",
+     "validity": null,
+     "task_effects": null,
+     "state_label": "VISIBILITY_LOSS",
+     "verb": null
+    }
+   ],
+   "interventions": [
+    {
+     "rid": "T30_RH0000",
+     "uid": 22512,
+     "side": "proactive",
+     "source": "USER_ACTION_STATE",
+     "types": [
+      "ERROR"
+     ],
+     "type": "ERROR",
+     "policy": "NECESSARY",
+     "wait": "censored",
+     "anchors": {
+      "es": 62.56,
+      "eo": 63.34,
+      "lu": 66.8
+     },
+     "events": [
+      {
+       "id": "a:3958",
+       "kind": "action",
+       "aid": 3958,
+       "t0": 57.69,
+       "t1": 66,
+       "text": "The user places a flat tortilla onto a white plate with both hands.",
+       "validity": "DEVIATION",
+       "state_label": null,
+       "task_effects": [
+        "DEVIATION_ONSET"
+       ],
+       "note": null
+      }
+     ],
+     "target": {
+      "t0": 64.03,
+      "t1": 68.15,
+      "text": "you're gonna wanna put it on the cutting board .. not on the plate",
+      "intent": "I9",
+      "category": "Correction",
+      "attributes": {
+       "content_target": "quantity_parameter"
+      },
+      "speaker": "instructor"
+     },
+     "focal": true
+    },
+    {
+     "rid": "T30_R0003",
+     "uid": 22515,
+     "side": "proactive",
+     "source": "USER_ACTION_STATE",
+     "types": [
+      "RECOVERY"
+     ],
+     "type": "RECOVERY",
+     "policy": "OPTIONAL",
+     "wait": "censored",
+     "anchors": {
+      "es": 68.4,
+      "eo": 68.8,
+      "lu": 70.35
+     },
+     "events": [
+      {
+       "id": "a:3959",
+       "kind": "action",
+       "aid": 3959,
+       "t0": 66.98,
+       "t1": 70,
+       "text": "The user places a flat tortilla on the red cutting board.",
+       "validity": "VALID",
+       "state_label": null,
+       "task_effects": [
+        "COMPLETION",
+        "RECOVERY"
+       ],
+       "note": null
+      }
+     ],
+     "target": {
+      "t0": 69.15,
+      "t1": 70.07,
+      "text": "yeah like that",
+      "intent": "I2",
+      "category": "Approval",
+      "attributes": {
+       "content_target": "action_method"
+      },
+      "speaker": "instructor"
+     },
+     "focal": false
+    },
+    {
+     "rid": "T30_R0004",
+     "uid": 22517,
+     "side": "reactive",
+     "source": "USER_UTTERANCE",
+     "types": [
+      "USER_QUERY"
+     ],
+     "type": "USER_QUERY",
+     "policy": "NECESSARY",
+     "wait": null,
+     "anchors": {
+      "r": 84.81,
+      "lu": 88.95
+     },
+     "events": [
+      {
+       "id": "u:22516",
+       "kind": "utterance",
+       "speaker": "user",
+       "uid": 22516,
+       "t0": 81.8,
+       "t1": 84.81,
+       "text": "uh so what's the spread\uff1f",
+       "intent": "U1"
+      }
+     ],
+     "target": {
+      "t0": 86.08,
+      "t1": 88.61,
+      "text": "uh you're going to be using peanut butter",
+      "intent": "I1",
+      "category": "Answer",
+      "attributes": {
+       "content_target": "object_tool"
+      },
+      "speaker": "instructor"
+     },
+     "focal": false
+    },
+    {
+     "rid": "T30_R0005",
+     "uid": 22519,
+     "side": "proactive",
+     "source": "USER_ACTION_STATE",
+     "types": [
+      "PROGRESS_OK"
+     ],
+     "type": "PROGRESS_OK",
+     "policy": "NECESSARY",
+     "wait": "censored",
+     "anchors": {
+      "es": 90.25,
+      "eo": 91.03,
+      "lu": 100.67
+     },
+     "events": [
+      {
+       "id": "a:3961",
+       "kind": "action",
+       "aid": 3961,
+       "t0": 88.96,
+       "t1": 94.41,
+       "text": "The user grabs the red-lidded jar of peanut butter from the table with their left hand.",
+       "validity": "VALID",
+       "state_label": null,
+       "task_effects": [
+        "PROGRESS"
+       ],
+       "note": null
+      }
+     ],
+     "target": {
+      "t0": 91.86,
+      "t1": 97.92,
+      "text": "and spread that on the tortilla with half an inch uncovered on the edges",
+      "intent": "I3",
+      "category": "Instruction",
+      "attributes": {
+       "content_target": "action_method"
+      },
+      "speaker": "instructor"
+     },
+     "focal": false
+    },
+    {
+     "rid": "T30_R0006",
+     "uid": 22520,
+     "side": "proactive",
+     "source": "USER_ACTION_STATE",
+     "types": [
+      "ERROR"
+     ],
+     "type": "ERROR",
+     "policy": "NECESSARY",
+     "wait": "censored",
+     "anchors": {
+      "es": 102.9,
+      "eo": 103.91,
+      "lu": 105.55
+     },
+     "events": [
+      {
+       "id": "a:5253",
+       "kind": "action",
+       "aid": 5253,
+       "t0": 102.94,
+       "t1": 105.23,
+       "text": "The user grabs a spoon with their right hand to scoop the nut butter.",
+       "validity": "DEVIATION",
+       "state_label": null,
+       "task_effects": [
+        "DEVIATION_ONSET"
+       ],
+       "note": null
+      }
+     ],
+     "target": {
+      "t0": 104.22,
+      "t1": 105.72,
+      "text": "with a butter knife",
+      "intent": "I9",
+      "category": "Correction",
+      "attributes": {
+       "content_target": "object_tool"
+      },
+      "speaker": "instructor"
+     },
+     "focal": false
+    },
+    {
+     "rid": "T30_R0007",
+     "uid": 22523,
+     "side": "reactive",
+     "source": "USER_UTTERANCE",
+     "types": [
+      "RECOVERY"
+     ],
+     "type": "RECOVERY",
+     "policy": "NECESSARY",
+     "wait": null,
+     "anchors": {
+      "r": 108.98,
+      "lu": 111.97
+     },
+     "events": [
+      {
+       "id": "u:22522",
+       "kind": "utterance",
+       "speaker": "user",
+       "uid": 22522,
+       "t0": 107.81,
+       "t1": 108.98,
+       "text": "this one?",
+       "intent": "U2"
+      }
+     ],
+     "target": {
+      "t0": 110.76,
+      "t1": 111.16,
+      "text": "yeah",
+      "intent": "I2",
+      "category": "Approval",
+      "attributes": {
+       "content_target": "object_tool"
+      },
+      "speaker": "instructor"
+     },
+     "focal": false
+    },
+    {
+     "rid": "T30_R0008",
+     "uid": 22524,
+     "side": "proactive",
+     "source": "USER_ACTION_STATE",
+     "types": [
+      "VISIBILITY"
+     ],
+     "type": "VISIBILITY",
+     "policy": "NECESSARY",
+     "wait": null,
+     "anchors": {
+      "es": 105.4,
+      "eo": 111.33,
+      "lu": 114.45
+     },
+     "events": [
+      {
+       "id": "s:5422",
+       "kind": "state_event",
+       "aid": 5422,
+       "t0": 105.42,
+       "t1": 113.17,
+       "text": "User's view is obstructed by the peanut butter jar and hand movements while scooping, making the tortilla and workspace partially or fully out of view.",
+       "validity": null,
+       "state_label": "VISIBILITY_LOSS",
+       "task_effects": null,
+       "note": null
+      }
+     ],
+     "target": {
+      "t0": 113.2,
+      "t1": 115.05,
+      "text": "and also you're going to have to look down a bit",
+      "intent": "I8",
+      "category": "Environmental Repair",
+      "attributes": {
+       "repair_target": "visual_access"
+      },
+      "speaker": "instructor"
+     },
+     "focal": false
+    }
+   ],
+   "keyframes": {
+    "es": {
+     "t": 62.56,
+     "file": "media/showcase/wtag_t30_hero_es.jpg"
+    },
+    "eo": {
+     "t": 63.34,
+     "file": "media/showcase/wtag_t30_hero_eo.jpg"
+    },
+    "lu": {
+     "t": 66.8,
+     "file": "media/showcase/wtag_t30_hero_lu.jpg"
+    },
+    "target": {
+     "t": 64.03,
+     "file": "media/showcase/wtag_t30_hero_target.jpg"
+    }
+   }
+  },
+  {
+   "id": "wtag_t5_query",
+   "group": "type",
+   "decision": null,
+   "dataset": "wtag",
+   "task": "coffee",
+   "session": "T5",
+   "session_duration_s": 478.92,
+   "range": [
+    112.5,
+    122.6
+   ],
+   "clip": "media/showcase/wtag_t5_query.mp4",
+   "poster": "media/showcase/wtag_t5_query.jpg",
+   "captions": "media/showcase/wtag_t5_query.vtt",
+   "has_audio": true,
+   "focus": null,
+   "title": "A quantity question",
+   "takeaway": "The user asks how much coffee to add. An answer is useful only after the question finishes, and only until the user moves on with \u201cok\u201d.",
+   "note": null,
+   "focal_rid": "T5_R0004",
+   "moment_captions": null,
+   "dims": null,
+   "steps": [
+    {
+     "name": "Grind coffee beans",
+     "kind": "step",
+     "t0": 94.533,
+     "t1": 216.354
+    }
+   ],
+   "utterances": [
+    {
+     "uid": 24655,
+     "t0": 116.04,
+     "t1": 117.72,
+     "speaker": "user",
+     "text": "how much coffee beans should I add?",
+     "intent": "U1",
+     "category": "Information Request",
+     "attributes": {
+      "request_type": "task_guidance"
+     }
+    },
+    {
+     "uid": 24656,
+     "t0": 117.72,
+     "t1": 119.71,
+     "speaker": "instructor",
+     "text": "you should add twenety five grams",
+     "intent": "I1",
+     "category": "Answer",
+     "attributes": {
+      "content_target": "quantity_parameter"
+     }
+    },
+    {
+     "uid": 24657,
+     "t0": 120.37,
+     "t1": 120.8,
+     "speaker": "user",
+     "text": "ok",
+     "intent": "U5",
+     "category": "Acknowledgment / Uptake",
+     "attributes": null
+    }
+   ],
+   "actions": [
+    {
+     "aid": 5092,
+     "kind": "action",
+     "t0": 112.5,
+     "t1": 137.2,
+     "description": "The user scoops coffee beans from a bag and adds them into a measuring cup placed on a scale.",
+     "validity": "VALID",
+     "task_effects": [
+      "PROGRESS"
+     ],
+     "state_label": null,
+     "verb": "add"
+    }
+   ],
+   "interventions": [
+    {
+     "rid": "T5_R0004",
+     "uid": 24656,
+     "side": "reactive",
+     "source": "USER_UTTERANCE",
+     "types": [
+      "USER_QUERY"
+     ],
+     "type": "USER_QUERY",
+     "policy": "NECESSARY",
+     "wait": null,
+     "anchors": {
+      "r": 117.72,
+      "lu": 120.37
+     },
+     "events": [
+      {
+       "id": "u:24655",
+       "kind": "utterance",
+       "speaker": "user",
+       "uid": 24655,
+       "t0": 116.04,
+       "t1": 117.72,
+       "text": "how much coffee beans should I add?",
+       "intent": "U1"
+      }
+     ],
+     "target": {
+      "t0": 117.72,
+      "t1": 119.71,
+      "text": "you should add twenety five grams",
+      "intent": "I1",
+      "category": "Answer",
+      "attributes": {
+       "content_target": "quantity_parameter"
+      },
+      "speaker": "instructor"
+     },
+     "focal": true
+    }
+   ],
+   "keyframes": {
+    "r": {
+     "t": 117.72,
+     "file": "media/showcase/wtag_t5_query_r.jpg"
+    },
+    "lu": {
+     "t": 120.37,
+     "file": "media/showcase/wtag_t5_query_lu.jpg"
+    },
+    "target": {
+     "t": 117.72,
+     "file": "media/showcase/wtag_t5_query_target.jpg"
+    }
+   }
+  },
+  {
+   "id": "wtag_t16_report",
+   "group": "type",
+   "decision": null,
+   "dataset": "wtag",
+   "task": "mugcake",
+   "session": "T16",
+   "session_duration_s": 749.598,
+   "range": [
+    188.18,
+    210.11
+   ],
+   "clip": "media/showcase/wtag_t16_report.mp4",
+   "poster": "media/showcase/wtag_t16_report.jpg",
+   "captions": "media/showcase/wtag_t16_report.vtt",
+   "has_audio": true,
+   "focus": null,
+   "title": "A plan that needs correcting",
+   "takeaway": "The user narrates a wrong plan (\u201cthe next step is combine the wet ingredients\u201d). The report itself, not an action, triggers a correction, which is necessary because the user would otherwise skip a step.",
+   "note": null,
+   "focal_rid": "T16_R0012",
+   "moment_captions": null,
+   "dims": null,
+   "steps": [
+    {
+     "name": "Dry ingredients",
+     "kind": "step",
+     "t0": 57.401,
+     "t1": 194.476
+    },
+    {
+     "name": "Wet ingredients",
+     "kind": "step",
+     "t0": 194.567,
+     "t1": 197.61
+    },
+    {
+     "name": "Combine",
+     "kind": "step",
+     "t0": 197.644,
+     "t1": 210.606
+    }
+   ],
+   "utterances": [
+    {
+     "uid": 21692,
+     "t0": 188.18,
+     "t1": 192.85,
+     "speaker": "user",
+     "text": "ok um and oil water and vanilla are all wet ingredients so i'll leave those out for now",
+     "intent": "U6",
+     "category": "Task Narration",
+     "attributes": {
+      "narration_type": "reasoning_need"
+     }
+    },
+    {
+     "uid": 21693,
+     "t0": 194.53,
+     "t1": 197.7,
+     "speaker": "user",
+     "text": "well i guess ok then the next step is combine the wet ingredients",
+     "intent": "U6",
+     "category": "Task Narration",
+     "attributes": {
+      "narration_type": "reasoning_need"
+     }
+    },
+    {
+     "uid": 21694,
+     "t0": 197.99,
+     "t1": 200.75,
+     "speaker": "instructor",
+     "text": "oh you should first whisk the dry ingredients together",
+     "intent": "I9",
+     "category": "Correction",
+     "attributes": {
+      "content_target": "sequence_step"
+     }
+    },
+    {
+     "uid": 21695,
+     "t0": 201.01,
+     "t1": 201.35,
+     "speaker": "user",
+     "text": "ok",
+     "intent": "U5",
+     "category": "Acknowledgment / Uptake",
+     "attributes": null
+    },
+    {
+     "uid": 21696,
+     "t0": 207.95,
+     "t1": 209.03,
+     "speaker": "instructor",
+     "text": "yeah that looks good",
+     "intent": "I2",
+     "category": "Approval",
+     "attributes": {
+      "content_target": "state_result"
+     }
+    },
+    {
+     "uid": 21697,
+     "t0": 209.03,
+     "t1": 209.51,
+     "speaker": "user",
+     "text": "ok",
+     "intent": "U5",
+     "category": "Acknowledgment / Uptake",
+     "attributes": null
+    }
+   ],
+   "actions": [
+    {
+     "aid": 3189,
+     "kind": "action",
+     "t0": 201,
+     "t1": 210.11,
+     "description": "The user mixes the dry ingredients in the white bowl using a whisk.",
+     "validity": "VALID",
+     "task_effects": [
+      "COMPLETION"
+     ],
+     "state_label": null,
+     "verb": "mix"
+    }
+   ],
+   "interventions": [
+    {
+     "rid": "T16_R0012",
+     "uid": 21694,
+     "side": "reactive",
+     "source": "USER_UTTERANCE",
+     "types": [
+      "USER_REPORT"
+     ],
+     "type": "USER_REPORT",
+     "policy": "NECESSARY",
+     "wait": null,
+     "anchors": {
+      "r": 197.7,
+      "lu": 201
+     },
+     "events": [
+      {
+       "id": "u:21693",
+       "kind": "utterance",
+       "speaker": "user",
+       "uid": 21693,
+       "t0": 194.53,
+       "t1": 197.7,
+       "text": "well i guess ok then the next step is combine the wet ingredients",
+       "intent": "U6"
+      }
+     ],
+     "target": {
+      "t0": 197.99,
+      "t1": 200.75,
+      "text": "oh you should first whisk the dry ingredients together",
+      "intent": "I9",
+      "category": "Correction",
+      "attributes": {
+       "content_target": "sequence_step"
+      },
+      "speaker": "instructor"
+     },
+     "focal": true
+    },
+    {
+     "rid": "T16_R0013",
+     "uid": 21696,
+     "side": "proactive",
+     "source": "USER_ACTION_STATE",
+     "types": [
+      "STEP_DONE"
+     ],
+     "type": "STEP_DONE",
+     "policy": "OPTIONAL",
+     "wait": "censored",
+     "anchors": {
+      "es": 205.37,
+      "eo": 207.9,
+      "lu": 209.02
+     },
+     "events": [
+      {
+       "id": "a:3189",
+       "kind": "action",
+       "aid": 3189,
+       "t0": 201,
+       "t1": 210.11,
+       "text": "The user mixes the dry ingredients in the white bowl using a whisk.",
+       "validity": "VALID",
+       "state_label": null,
+       "task_effects": [
+        "COMPLETION"
+       ],
+       "note": null
+      }
+     ],
+     "target": {
+      "t0": 207.95,
+      "t1": 209.03,
+      "text": "yeah that looks good",
+      "intent": "I2",
+      "category": "Approval",
+      "attributes": {
+       "content_target": "state_result"
+      },
+      "speaker": "instructor"
+     },
+     "focal": false
+    }
+   ],
+   "keyframes": {
+    "r": {
+     "t": 197.7,
+     "file": "media/showcase/wtag_t16_report_r.jpg"
+    },
+    "lu": {
+     "t": 201,
+     "file": "media/showcase/wtag_t16_report_lu.jpg"
+    },
+    "target": {
+     "t": 197.99,
+     "file": "media/showcase/wtag_t16_report_target.jpg"
+    }
+   }
+  },
+  {
+   "id": "wtag_t2_error",
+   "group": "type",
+   "decision": null,
+   "dataset": "wtag",
+   "task": "pinwheel",
+   "session": "T2",
+   "session_duration_s": 470.788,
+   "range": [
+    71.7,
+    94.2
+   ],
+   "clip": "media/showcase/wtag_t2_error.mp4",
+   "poster": "media/showcase/wtag_t2_error.jpg",
+   "captions": "media/showcase/wtag_t2_error.vtt",
+   "has_audio": true,
+   "focus": null,
+   "title": "The user grabs a fork instead of a knife",
+   "takeaway": "The user grabs a fork where the recipe needs a knife. The window opens at the first sign of the wrong choice (t_early), the evidence is complete once the fork is clearly in hand (t_evid), and the window closes (t_latest) when the hand already reaches for the knife, while the instructor is still speaking.",
+   "note": "The worked example of the paper (Appendix B).",
+   "focal_rid": "T2_R0005",
+   "moment_captions": null,
+   "dims": {
+    "why": "The user picks up a fork; the recipe calls for a knife. A deviating action, seen in the camera view, is the evidence.",
+    "whether": "Necessary: if left uncorrected, the user would spread with the wrong tool.",
+    "what": "A correction about the object: \u201cYou should use the knife instead of the fork.\u201d"
+   },
+   "steps": [
+    {
+     "name": "Place tortilla",
+     "kind": "step",
+     "t0": 64.534,
+     "t1": 80.066
+    },
+    {
+     "name": "Spread nut butter",
+     "kind": "step",
+     "t0": 80.81,
+     "t1": 125.134
+    }
+   ],
+   "utterances": [
+    {
+     "uid": 21948,
+     "t0": 73.05,
+     "t1": 75.32,
+     "speaker": "instructor",
+     "text": "You should place the tortilla on the cutting board.",
+     "intent": "I3",
+     "category": "Instruction",
+     "attributes": {
+      "content_target": "sequence_step"
+     }
+    },
+    {
+     "uid": 21949,
+     "t0": 76.75,
+     "t1": 77.23,
+     "speaker": "user",
+     "text": "Okay",
+     "intent": "U5",
+     "category": "Acknowledgment / Uptake",
+     "attributes": null
+    },
+    {
+     "uid": 21950,
+     "t0": 83.35,
+     "t1": 87.85,
+     "speaker": "instructor",
+     "text": "You should use the knife instead of the fork",
+     "intent": "I9",
+     "category": "Correction",
+     "attributes": {
+      "content_target": "object_tool"
+     }
+    }
+   ],
+   "actions": [
+    {
+     "aid": 5421,
+     "kind": "action",
+     "t0": 71.7,
+     "t1": 73.35,
+     "description": "The user places a flat tortilla on the cutting board using both hands.",
+     "validity": "DEVIATION",
+     "task_effects": [
+      "DEVIATION_ONSET"
+     ],
+     "state_label": null,
+     "verb": "place"
+    },
+    {
+     "aid": 355,
+     "kind": "action",
+     "t0": 74.65,
+     "t1": 78.2,
+     "description": "The user places a flat tortilla onto the red cutting board using both hands.",
+     "validity": "VALID",
+     "task_effects": [
+      "RECOVERY"
+     ],
+     "state_label": null,
+     "verb": "place"
+    },
+    {
+     "aid": 356,
+     "kind": "action",
+     "t0": 81.2,
+     "t1": 83.8,
+     "description": "The person grabs a fork with their right hand.",
+     "validity": "DEVIATION",
+     "task_effects": [
+      "DEVIATION_ONSET"
+     ],
+     "state_label": null,
+     "verb": "grab"
+    },
+    {
+     "aid": 357,
+     "kind": "action",
+     "t0": 85.54,
+     "t1": 87.83,
+     "description": "The person grabs a knife with their right hand.",
+     "validity": "VALID",
+     "task_effects": [
+      "RECOVERY"
+     ],
+     "state_label": null,
+     "verb": "grab"
+    },
+    {
+     "aid": 358,
+     "kind": "action",
+     "t0": 87.83,
+     "t1": 94.2,
+     "description": "The person opens a red-lidded jar of peanut butter.",
+     "validity": "VALID",
+     "task_effects": [
+      "PROGRESS"
+     ],
+     "state_label": null,
+     "verb": "open"
+    }
+   ],
+   "interventions": [
+    {
+     "rid": "T2_R0004",
+     "uid": 21948,
+     "side": "proactive",
+     "source": "USER_ACTION_STATE",
+     "types": [
+      "ERROR"
+     ],
+     "type": "ERROR",
+     "policy": "NECESSARY",
+     "wait": "censored",
+     "anchors": {
+      "es": 72.1,
+      "eo": 72.55,
+      "lu": 75.55
+     },
+     "events": [
+      {
+       "id": "a:5421",
+       "kind": "action",
+       "aid": 5421,
+       "t0": 71.7,
+       "t1": 73.35,
+       "text": "The user places a flat tortilla on the cutting board using both hands.",
+       "validity": "DEVIATION",
+       "state_label": null,
+       "task_effects": [
+        "DEVIATION_ONSET"
+       ],
+       "note": null
+      }
+     ],
+     "target": {
+      "t0": 73.05,
+      "t1": 75.32,
+      "text": "You should place the tortilla on the cutting board.",
+      "intent": "I3",
+      "category": "Instruction",
+      "attributes": {
+       "content_target": "sequence_step"
+      },
+      "speaker": "instructor"
+     },
+     "focal": false
+    },
+    {
+     "rid": "T2_R0005",
+     "uid": 21950,
+     "side": "proactive",
+     "source": "USER_ACTION_STATE",
+     "types": [
+      "ERROR"
+     ],
+     "type": "ERROR",
+     "policy": "NECESSARY",
+     "wait": "censored",
+     "anchors": {
+      "es": 81.2,
+      "eo": 82.84,
+      "lu": 85.38
+     },
+     "events": [
+      {
+       "id": "a:356",
+       "kind": "action",
+       "aid": 356,
+       "t0": 81.2,
+       "t1": 83.8,
+       "text": "The person grabs a fork with their right hand.",
+       "validity": "DEVIATION",
+       "state_label": null,
+       "task_effects": [
+        "DEVIATION_ONSET"
+       ],
+       "note": null
+      }
+     ],
+     "target": {
+      "t0": 83.35,
+      "t1": 87.85,
+      "text": "You should use the knife instead of the fork",
+      "intent": "I9",
+      "category": "Correction",
+      "attributes": {
+       "content_target": "object_tool"
+      },
+      "speaker": "instructor"
+     },
+     "focal": true
+    }
+   ],
+   "keyframes": {
+    "es": {
+     "t": 81.2,
+     "file": "media/showcase/wtag_t2_error_es.jpg"
+    },
+    "eo": {
+     "t": 82.84,
+     "file": "media/showcase/wtag_t2_error_eo.jpg"
+    },
+    "lu": {
+     "t": 85.38,
+     "file": "media/showcase/wtag_t2_error_lu.jpg"
+    },
+    "target": {
+     "t": 83.35,
+     "file": "media/showcase/wtag_t2_error_target.jpg"
+    }
+   }
+  },
+  {
+   "id": "wtag_t11_error_speech",
+   "group": "type",
+   "decision": null,
+   "dataset": "wtag",
+   "task": "coffee",
+   "session": "T11",
+   "session_duration_s": 652.212,
+   "range": [
+    30.0,
+    58.77
+   ],
+   "clip": "media/showcase/wtag_t11_error_speech.mp4",
+   "poster": "media/showcase/wtag_t11_error_speech.jpg",
+   "captions": "media/showcase/wtag_t11_error_speech.vtt",
+   "has_audio": true,
+   "focus": null,
+   "title": "An error in the user\u2019s own words",
+   "takeaway": "Asked how much water is being poured, the user answers \u201c14 ounces\u201d. The words, not the view, reveal the error, so this correction is reactive: its window opens when the answer ends.",
+   "note": null,
+   "focal_rid": "T11_R0003",
+   "moment_captions": null,
+   "dims": null,
+   "steps": [
+    {
+     "name": "Boil water",
+     "kind": "step",
+     "t0": 10.086,
+     "t1": 139.691
+    }
+   ],
+   "utterances": [
+    {
+     "uid": 21103,
+     "t0": 44.45,
+     "t1": 46.16,
+     "speaker": "instructor",
+     "text": "how much water are we pouring?",
+     "intent": "I5",
+     "category": "Question-to-User",
+     "attributes": {
+      "question_purpose": "task_state"
+     }
+    },
+    {
+     "uid": 21104,
+     "t0": 46.89,
+     "t1": 48.68,
+     "speaker": "user",
+     "text": "umm 14 ounces",
+     "intent": "U4",
+     "category": "Answer",
+     "attributes": null
+    },
+    {
+     "uid": 21105,
+     "t0": 48.68,
+     "t1": 51.32,
+     "speaker": "instructor",
+     "text": "oh we should only need 12 ounces",
+     "intent": "I9",
+     "category": "Correction",
+     "attributes": {
+      "content_target": "quantity_parameter"
+     }
+    },
+    {
+     "uid": 21106,
+     "t0": 51.97,
+     "t1": 54.08,
+     "speaker": "user",
+     "text": "what should i do with the extra water?",
+     "intent": "U1",
+     "category": "Information Request",
+     "attributes": {
+      "request_type": "task_guidance"
+     }
+    },
+    {
+     "uid": 21107,
+     "t0": 54.41,
+     "t1": 58.77,
+     "speaker": "instructor",
+     "text": "uh you could just pour until there's two lines left",
+     "intent": "I4",
+     "category": "Advisory",
+     "attributes": {
+      "content_target": "quantity_parameter"
+     }
+    }
+   ],
+   "actions": [
+    {
+     "aid": 2941,
+     "kind": "action",
+     "t0": 30,
+     "t1": 48.25,
+     "description": "The user pours 14 oz cold water from the jug into the measuring cup.",
+     "validity": "DEVIATION",
+     "task_effects": [
+      "DEVIATION_ONSET"
+     ],
+     "state_label": null,
+     "verb": "pour"
+    },
+    {
+     "aid": 2942,
+     "kind": "action",
+     "t0": 49.57,
+     "t1": 54.9,
+     "description": "The user closes the milk jug.",
+     "validity": "VALID",
+     "task_effects": [
+      "NO_PROGRESS"
+     ],
+     "state_label": null,
+     "verb": "close"
+    },
+    {
+     "aid": 2944,
+     "kind": "action",
+     "t0": 53.9,
+     "t1": 57.85,
+     "description": "The user places the milk jug on the counter.",
+     "validity": "VALID",
+     "task_effects": [
+      "NO_PROGRESS"
+     ],
+     "state_label": null,
+     "verb": "place"
+    }
+   ],
+   "interventions": [
+    {
+     "rid": "T11_R0002",
+     "uid": 21103,
+     "side": "proactive",
+     "source": "USER_ACTION_STATE",
+     "types": [
+      "UNCLEAR_STATE"
+     ],
+     "type": "UNCLEAR_STATE",
+     "policy": "OPTIONAL",
+     "wait": "censored",
+     "anchors": {
+      "es": 35.67,
+      "eo": 44.35,
+      "lu": 46.87
+     },
+     "events": [
+      {
+       "id": "a:2941",
+       "kind": "action",
+       "aid": 2941,
+       "t0": 30,
+       "t1": 48.25,
+       "text": "The user pours 14 oz cold water from the jug into the measuring cup.",
+       "validity": "DEVIATION",
+       "state_label": null,
+       "task_effects": [
+        "DEVIATION_ONSET"
+       ],
+       "note": null
+      }
+     ],
+     "target": {
+      "t0": 44.45,
+      "t1": 46.16,
+      "text": "how much water are we pouring?",
+      "intent": "I5",
+      "category": "Question-to-User",
+      "attributes": {
+       "question_purpose": "task_state"
+      },
+      "speaker": "instructor"
+     },
+     "focal": false
+    },
+    {
+     "rid": "T11_R0003",
+     "uid": 21105,
+     "side": "reactive",
+     "source": "USER_UTTERANCE",
+     "types": [
+      "ERROR",
+      "USER_REPORT"
+     ],
+     "type": "ERROR",
+     "policy": "NECESSARY",
+     "wait": null,
+     "anchors": {
+      "r": 48.68,
+      "lu": 51.97
+     },
+     "events": [
+      {
+       "id": "u:21104",
+       "kind": "utterance",
+       "speaker": "user",
+       "uid": 21104,
+       "t0": 46.89,
+       "t1": 48.68,
+       "text": "umm 14 ounces",
+       "intent": "U4"
+      }
+     ],
+     "target": {
+      "t0": 48.68,
+      "t1": 51.32,
+      "text": "oh we should only need 12 ounces",
+      "intent": "I9",
+      "category": "Correction",
+      "attributes": {
+       "content_target": "quantity_parameter"
+      },
+      "speaker": "instructor"
+     },
+     "focal": true
+    },
+    {
+     "rid": "T11_R0004",
+     "uid": 21107,
+     "side": "reactive",
+     "source": "USER_UTTERANCE",
+     "types": [
+      "USER_QUERY"
+     ],
+     "type": "USER_QUERY",
+     "policy": "NECESSARY",
+     "wait": null,
+     "anchors": {
+      "r": 54.08,
+      "lu": 58.77
+     },
+     "events": [
+      {
+       "id": "u:21106",
+       "kind": "utterance",
+       "speaker": "user",
+       "uid": 21106,
+       "t0": 51.97,
+       "t1": 54.08,
+       "text": "what should i do with the extra water?",
+       "intent": "U1"
+      }
+     ],
+     "target": {
+      "t0": 54.41,
+      "t1": 58.77,
+      "text": "uh you could just pour until there's two lines left",
+      "intent": "I4",
+      "category": "Advisory",
+      "attributes": {
+       "content_target": "quantity_parameter"
+      },
+      "speaker": "instructor"
+     },
+     "focal": false
+    }
+   ],
+   "keyframes": {
+    "r": {
+     "t": 48.68,
+     "file": "media/showcase/wtag_t11_error_speech_r.jpg"
+    },
+    "lu": {
+     "t": 51.97,
+     "file": "media/showcase/wtag_t11_error_speech_lu.jpg"
+    },
+    "target": {
+     "t": 48.68,
+     "file": "media/showcase/wtag_t11_error_speech_target.jpg"
+    }
+   }
+  },
+  {
+   "id": "wtag_t31_stuck",
+   "group": "type",
+   "decision": null,
+   "dataset": "wtag",
+   "task": "coffee",
+   "session": "T31",
+   "session_duration_s": 562.844,
+   "range": [
+    270.89,
+    292.36
+   ],
+   "clip": "media/showcase/wtag_t31_stuck.mp4",
+   "poster": "media/showcase/wtag_t31_stuck.jpg",
+   "captions": "media/showcase/wtag_t31_stuck.vtt",
+   "has_audio": true,
+   "focus": null,
+   "title": "Searching for the grinder switch",
+   "takeaway": "Nobody asks a question. The user turns the grinder over looking for its switch; the search itself is the evidence, and the instruction is necessary because the user cannot proceed without it.",
+   "note": null,
+   "focal_rid": "T31_R0017",
+   "moment_captions": null,
+   "dims": null,
+   "steps": [
+    {
+     "name": "Grind coffee beans",
+     "kind": "step",
+     "t0": 182.103,
+     "t1": 324.123
+    }
+   ],
+   "utterances": [
+    {
+     "uid": 22616,
+     "t0": 279.23,
+     "t1": 281.33,
+     "speaker": "instructor",
+     "text": "you could press the black button",
+     "intent": "I3",
+     "category": "Instruction",
+     "attributes": {
+      "content_target": "action_method"
+     }
+    }
+   ],
+   "actions": [
+    {
+     "aid": 4045,
+     "kind": "action",
+     "t0": 270.89,
+     "t1": 273.36,
+     "description": "The user places the lid back onto the coffee grinder to close it.",
+     "validity": "VALID",
+     "task_effects": [
+      "PROGRESS"
+     ],
+     "state_label": null,
+     "verb": "close"
+    },
+    {
+     "aid": 5551,
+     "kind": "state_event",
+     "t0": 273.47,
+     "t1": 281.16,
+     "description": "user is searching for button to turn on the grinder",
+     "validity": null,
+     "task_effects": null,
+     "state_label": "SEARCHING",
+     "verb": null
+    },
+    {
+     "aid": 4047,
+     "kind": "action",
+     "t0": 282.55,
+     "t1": 292.36,
+     "description": "The person presses the black button on the coffee grinder to operate the grinding process.",
+     "validity": "VALID",
+     "task_effects": [
+      "PROGRESS"
+     ],
+     "state_label": null,
+     "verb": "press"
+    }
+   ],
+   "interventions": [
+    {
+     "rid": "T31_R0017",
+     "uid": 22616,
+     "side": "proactive",
+     "source": "USER_ACTION_STATE",
+     "types": [
+      "STUCK"
+     ],
+     "type": "STUCK",
+     "policy": "NECESSARY",
+     "wait": null,
+     "anchors": {
+      "es": 273.5,
+      "eo": 278.05,
+      "lu": 282.17
+     },
+     "events": [
+      {
+       "id": "a:5551",
+       "kind": "state_event",
+       "aid": 5551,
+       "t0": 273.47,
+       "t1": 281.16,
+       "text": "user is searching for button to turn on the grinder",
+       "validity": null,
+       "state_label": "SEARCHING",
+       "task_effects": null,
+       "note": null
+      }
+     ],
+     "target": {
+      "t0": 279.23,
+      "t1": 281.33,
+      "text": "you could press the black button",
+      "intent": "I3",
+      "category": "Instruction",
+      "attributes": {
+       "content_target": "action_method"
+      },
+      "speaker": "instructor"
+     },
+     "focal": true
+    }
+   ],
+   "keyframes": {
+    "es": {
+     "t": 273.5,
+     "file": "media/showcase/wtag_t31_stuck_es.jpg"
+    },
+    "eo": {
+     "t": 278.05,
+     "file": "media/showcase/wtag_t31_stuck_eo.jpg"
+    },
+    "lu": {
+     "t": 282.17,
+     "file": "media/showcase/wtag_t31_stuck_lu.jpg"
+    },
+    "target": {
+     "t": 279.23,
+     "file": "media/showcase/wtag_t31_stuck_target.jpg"
+    }
+   }
+  },
+  {
+   "id": "wtag_t48_stuck_speech",
+   "group": "type",
+   "decision": null,
+   "dataset": "wtag",
+   "task": "coffee",
+   "session": "T48",
+   "session_duration_s": 785.52,
+   "range": [
+    124.8,
+    138.75
+   ],
+   "clip": "media/showcase/wtag_t48_stuck_speech.mp4",
+   "poster": "media/showcase/wtag_t48_stuck_speech.jpg",
+   "captions": "media/showcase/wtag_t48_stuck_speech.vtt",
+   "has_audio": true,
+   "focus": null,
+   "title": "A word the user does not know: \u201cfilter cone\u201d",
+   "takeaway": "The user reads \u201cfilter cone\u201d off the recipe and stops. It is not a question, only a hesitation, but it shows the user is stuck, and the explanation is necessary.",
+   "note": null,
+   "focal_rid": "T48_R0007",
+   "moment_captions": null,
+   "dims": null,
+   "steps": [
+    {
+     "name": "Assemble filter cone",
+     "kind": "step",
+     "t0": 115.288,
+     "t1": 190.01
+    }
+   ],
+   "utterances": [
+    {
+     "uid": 24330,
+     "t0": 126.33,
+     "t1": 130.85,
+     "speaker": "user",
+     "text": "ok I don't drink coffee so I've never prepared coffee actually but uh",
+     "intent": "U8",
+     "category": "Affective Expression / Social Talk",
+     "attributes": {
+      "expression_type": "task_related_aside"
+     }
+    },
+    {
+     "uid": 24331,
+     "t0": 132.07,
+     "t1": 134.1,
+     "speaker": "user",
+     "text": "uh filter cone",
+     "intent": "U9",
+     "category": "Filler / Hesitation",
+     "attributes": null
+    },
+    {
+     "uid": 24332,
+     "t0": 134.72,
+     "t1": 136.83,
+     "speaker": "instructor",
+     "text": "yeah so the filter cone is the metal thing",
+     "intent": "I1",
+     "category": "Answer",
+     "attributes": {
+      "content_target": "object_tool"
+     }
+    },
+    {
+     "uid": 24333,
+     "t0": 136.94,
+     "t1": 138.75,
+     "speaker": "user",
+     "text": "this oh what is this ok?",
+     "intent": "U1",
+     "category": "Information Request",
+     "attributes": {
+      "request_type": "task_guidance"
+     }
+    }
+   ],
+   "actions": [
+    {
+     "aid": 4697,
+     "kind": "action",
+     "t0": 124.8,
+     "t1": 127.37,
+     "description": "The user removes a paper filter from a bag with their right hand.",
+     "validity": "VALID",
+     "task_effects": [
+      "PROGRESS"
+     ],
+     "state_label": null,
+     "verb": "remove"
+    },
+    {
+     "aid": 4698,
+     "kind": "action",
+     "t0": 130.2,
+     "t1": 135,
+     "description": "The user holds the paper filter in their right hand.",
+     "validity": "VALID",
+     "task_effects": [
+      "NO_PROGRESS"
+     ],
+     "state_label": null,
+     "verb": "hold"
+    }
+   ],
+   "interventions": [
+    {
+     "rid": "T48_R0007",
+     "uid": 24332,
+     "side": "reactive",
+     "source": "USER_UTTERANCE",
+     "types": [
+      "STUCK"
+     ],
+     "type": "STUCK",
+     "policy": "NECESSARY",
+     "wait": null,
+     "anchors": {
+      "r": 134.1,
+      "lu": 136.83
+     },
+     "events": [
+      {
+       "id": "u:24331",
+       "kind": "utterance",
+       "speaker": "user",
+       "uid": 24331,
+       "t0": 132.07,
+       "t1": 134.1,
+       "text": "uh filter cone",
+       "intent": "U9"
+      }
+     ],
+     "target": {
+      "t0": 134.72,
+      "t1": 136.83,
+      "text": "yeah so the filter cone is the metal thing",
+      "intent": "I1",
+      "category": "Answer",
+      "attributes": {
+       "content_target": "object_tool"
+      },
+      "speaker": "instructor"
+     },
+     "focal": true
+    }
+   ],
+   "keyframes": {
+    "r": {
+     "t": 134.1,
+     "file": "media/showcase/wtag_t48_stuck_speech_r.jpg"
+    },
+    "lu": {
+     "t": 136.83,
+     "file": "media/showcase/wtag_t48_stuck_speech_lu.jpg"
+    },
+    "target": {
+     "t": 134.72,
+     "file": "media/showcase/wtag_t48_stuck_speech_target.jpg"
+    }
+   }
+  },
+  {
+   "id": "wtag_t36_unclear",
+   "group": "type",
+   "decision": null,
+   "dataset": "wtag",
+   "task": "mugcake",
+   "session": "T36",
+   "session_duration_s": 787.716,
+   "range": [
+    615.49,
+    623.94
+   ],
+   "clip": "media/showcase/wtag_t36_unclear.mp4",
+   "poster": "media/showcase/wtag_t36_unclear.jpg",
+   "captions": "media/showcase/wtag_t36_unclear.vtt",
+   "has_audio": true,
+   "focus": null,
+   "title": "A count the camera cannot settle",
+   "takeaway": "The instructor cannot tell how many spoonfuls went into the bag and asks. The question is necessary; the answer (\u201cthree\u201d) then reveals an error, and a second, reactive correction follows.",
+   "note": null,
+   "focal_rid": "T36_R0016",
+   "moment_captions": null,
+   "dims": null,
+   "steps": [
+    {
+     "name": "Prepare frosting",
+     "kind": "step",
+     "t0": 527.203,
+     "t1": 650.141
+    }
+   ],
+   "utterances": [
+    {
+     "uid": 22909,
+     "t0": 617.77,
+     "t1": 620.05,
+     "speaker": "instructor",
+     "text": "was that three spoons or four spoons?",
+     "intent": "I5",
+     "category": "Question-to-User",
+     "attributes": {
+      "question_purpose": "task_state"
+     }
+    },
+    {
+     "uid": 22910,
+     "t0": 620.19,
+     "t1": 622.27,
+     "speaker": "user",
+     "text": "two three spoons",
+     "intent": "U4",
+     "category": "Answer",
+     "attributes": null
+    },
+    {
+     "uid": 22911,
+     "t0": 622.27,
+     "t1": 623.23,
+     "speaker": "instructor",
+     "text": "uh let's get one more",
+     "intent": "I9",
+     "category": "Correction",
+     "attributes": {
+      "content_target": "quantity_parameter"
+     }
+    },
+    {
+     "uid": 22912,
+     "t0": 623.23,
+     "t1": 623.94,
+     "speaker": "user",
+     "text": "ok",
+     "intent": "U5",
+     "category": "Acknowledgment / Uptake",
+     "attributes": null
+    }
+   ],
+   "actions": [
+    {
+     "aid": 5534,
+     "kind": "action",
+     "t0": 615.49,
+     "t1": 619.09,
+     "description": "user only added three spoons frosting and places spoon back to the counter",
+     "validity": "DEVIATION",
+     "task_effects": [
+      "DEVIATION_ONSET"
+     ],
+     "state_label": null,
+     "verb": "place"
+    }
+   ],
+   "interventions": [
+    {
+     "rid": "T36_R0016",
+     "uid": 22909,
+     "side": "proactive",
+     "source": "USER_ACTION_STATE",
+     "types": [
+      "UNCLEAR_STATE"
+     ],
+     "type": "UNCLEAR_STATE",
+     "policy": "NECESSARY",
+     "wait": "censored",
+     "anchors": {
+      "es": 615.5,
+      "eo": 617.3,
+      "lu": 621.2
+     },
+     "events": [
+      {
+       "id": "a:5534",
+       "kind": "action",
+       "aid": 5534,
+       "t0": 615.49,
+       "t1": 619.09,
+       "text": "user only added three spoons frosting and places spoon back to the counter",
+       "validity": "DEVIATION",
+       "state_label": null,
+       "task_effects": [
+        "DEVIATION_ONSET"
+       ],
+       "note": null
+      }
+     ],
+     "target": {
+      "t0": 617.77,
+      "t1": 620.05,
+      "text": "was that three spoons or four spoons?",
+      "intent": "I5",
+      "category": "Question-to-User",
+      "attributes": {
+       "question_purpose": "task_state"
+      },
+      "speaker": "instructor"
+     },
+     "focal": true
+    },
+    {
+     "rid": "T36_R0017",
+     "uid": 22911,
+     "side": "reactive",
+     "source": "USER_UTTERANCE",
+     "types": [
+      "ERROR"
+     ],
+     "type": "ERROR",
+     "policy": "NECESSARY",
+     "wait": null,
+     "anchors": {
+      "r": 622.27,
+      "lu": 623.23
+     },
+     "events": [
+      {
+       "id": "u:22910",
+       "kind": "utterance",
+       "speaker": "user",
+       "uid": 22910,
+       "t0": 620.19,
+       "t1": 622.27,
+       "text": "two three spoons",
+       "intent": "U4"
+      }
+     ],
+     "target": {
+      "t0": 622.27,
+      "t1": 623.23,
+      "text": "uh let's get one more",
+      "intent": "I9",
+      "category": "Correction",
+      "attributes": {
+       "content_target": "quantity_parameter"
+      },
+      "speaker": "instructor"
+     },
+     "focal": false
+    }
+   ],
+   "keyframes": {
+    "es": {
+     "t": 615.5,
+     "file": "media/showcase/wtag_t36_unclear_es.jpg"
+    },
+    "eo": {
+     "t": 617.3,
+     "file": "media/showcase/wtag_t36_unclear_eo.jpg"
+    },
+    "lu": {
+     "t": 621.2,
+     "file": "media/showcase/wtag_t36_unclear_lu.jpg"
+    },
+    "target": {
+     "t": 617.77,
+     "file": "media/showcase/wtag_t36_unclear_target.jpg"
+    }
+   }
+  },
+  {
+   "id": "wtag_t37_visibility",
+   "group": "type",
+   "decision": null,
+   "dataset": "wtag",
+   "task": "coffee",
+   "session": "T37",
+   "session_duration_s": 759.564,
+   "range": [
+    259.8,
+    279.85
+   ],
+   "clip": "media/showcase/wtag_t37_visibility.mp4",
+   "poster": "media/showcase/wtag_t37_visibility.jpg",
+   "captions": "media/showcase/wtag_t37_visibility.vtt",
+   "has_audio": true,
+   "focus": null,
+   "title": "When the workspace leaves the camera view",
+   "takeaway": "The camera drifts up to the wall and the workspace disappears. Asking the user to look down restores the view; it is necessary because the instructor can no longer see the task.",
+   "note": null,
+   "focal_rid": "T37_R0016",
+   "moment_captions": null,
+   "dims": null,
+   "steps": [
+    {
+     "name": "Grind coffee beans",
+     "kind": "step",
+     "t0": 233.501,
+     "t1": 497.824
+    }
+   ],
+   "utterances": [
+    {
+     "uid": 22956,
+     "t0": 261.86,
+     "t1": 262.81,
+     "speaker": "instructor",
+     "text": "is everything ok?",
+     "intent": "I5",
+     "category": "Question-to-User",
+     "attributes": {
+      "question_purpose": "task_state"
+     }
+    },
+    {
+     "uid": 22957,
+     "t0": 262.81,
+     "t1": 263.77,
+     "speaker": "user",
+     "text": "yeah",
+     "intent": "U4",
+     "category": "Answer",
+     "attributes": null
+    },
+    {
+     "uid": 22958,
+     "t0": 267.19,
+     "t1": 270.11,
+     "speaker": "instructor",
+     "text": "you will have to look down a little bit more thank you",
+     "intent": "I8",
+     "category": "Environmental Repair",
+     "attributes": {
+      "repair_target": "visual_access"
+     }
+    },
+    {
+     "uid": 22959,
+     "t0": 274.4,
+     "t1": 279.85,
+     "speaker": "instructor",
+     "text": "oh you might want to zero out the glass before you weigh the coffee beans",
+     "intent": "I9",
+     "category": "Correction",
+     "attributes": {
+      "content_target": "action_method"
+     }
+    }
+   ],
+   "actions": [
+    {
+     "aid": 4173,
+     "kind": "state_event",
+     "t0": 259.8,
+     "t1": 267.78,
+     "description": "The camera view is pointed at the wall, causing the relevant workspace and coffee-making equipment to leave the frame.",
+     "validity": null,
+     "task_effects": null,
+     "state_label": "VISIBILITY_LOSS",
+     "verb": null
+    },
+    {
+     "aid": 5432,
+     "kind": "state_event",
+     "t0": 263.35,
+     "t1": 268.7,
+     "description": "Camera view is mostly of the wall, with only partial visibility of the workspace; user's hands and objects are not clearly visible.",
+     "validity": null,
+     "task_effects": null,
+     "state_label": "VISIBILITY_LOSS",
+     "verb": null
+    },
+    {
+     "aid": 5433,
+     "kind": "state_event",
+     "t0": 268.7,
+     "t1": 270.1,
+     "description": "Camera view returns to show the workspace clearly, including the user's hands adding coffee beans to the filter.",
+     "validity": null,
+     "task_effects": null,
+     "state_label": "VISIBILITY_RECOVERY",
+     "verb": null
+    },
+    {
+     "aid": 4155,
+     "kind": "action",
+     "t0": 269.4,
+     "t1": 274.6,
+     "description": "The user adds coffee beans from a bag into the bowl, but without measuring it",
+     "validity": "DEVIATION",
+     "task_effects": [
+      "DEVIATION_ONSET"
+     ],
+     "state_label": null,
+     "verb": "add"
+    }
+   ],
+   "interventions": [
+    {
+     "rid": "T37_R0015",
+     "uid": 22956,
+     "side": "none",
+     "source": "NONE_FOUND",
+     "types": [
+      "NONE"
+     ],
+     "type": "NONE",
+     "policy": "OPTIONAL",
+     "wait": null,
+     "anchors": {},
+     "events": [],
+     "target": {
+      "t0": 261.86,
+      "t1": 262.81,
+      "text": "is everything ok?",
+      "intent": "I5",
+      "category": "Question-to-User",
+      "attributes": {
+       "question_purpose": "task_state"
+      },
+      "speaker": "instructor"
+     },
+     "focal": false
+    },
+    {
+     "rid": "T37_R0016",
+     "uid": 22958,
+     "side": "proactive",
+     "source": "USER_ACTION_STATE",
+     "types": [
+      "VISIBILITY"
+     ],
+     "type": "VISIBILITY",
+     "policy": "NECESSARY",
+     "wait": null,
+     "anchors": {
+      "es": 260.58,
+      "eo": 263.32,
+      "lu": 269.3
+     },
+     "events": [
+      {
+       "id": "s:5432",
+       "kind": "state_event",
+       "aid": 5432,
+       "t0": 263.35,
+       "t1": 268.7,
+       "text": "Camera view is mostly of the wall, with only partial visibility of the workspace; user's hands and objects are not clearly visible.",
+       "validity": null,
+       "state_label": "VISIBILITY_LOSS",
+       "task_effects": null,
+       "note": null
+      }
+     ],
+     "target": {
+      "t0": 267.19,
+      "t1": 270.11,
+      "text": "you will have to look down a little bit more thank you",
+      "intent": "I8",
+      "category": "Environmental Repair",
+      "attributes": {
+       "repair_target": "visual_access"
+      },
+      "speaker": "instructor"
+     },
+     "focal": true
+    },
+    {
+     "rid": "T37_R0017",
+     "uid": 22959,
+     "side": "proactive",
+     "source": "USER_ACTION_STATE",
+     "types": [
+      "ERROR"
+     ],
+     "type": "ERROR",
+     "policy": "NECESSARY",
+     "wait": "censored",
+     "anchors": {
+      "es": 270.92,
+      "eo": 275.43,
+      "lu": 285.23
+     },
+     "events": [
+      {
+       "id": "a:4155",
+       "kind": "action",
+       "aid": 4155,
+       "t0": 269.4,
+       "t1": 274.6,
+       "text": "The user adds coffee beans from a bag into the bowl, but without measuring it",
+       "validity": "DEVIATION",
+       "state_label": null,
+       "task_effects": [
+        "DEVIATION_ONSET"
+       ],
+       "note": null
+      }
+     ],
+     "target": {
+      "t0": 274.4,
+      "t1": 279.85,
+      "text": "oh you might want to zero out the glass before you weigh the coffee beans",
+      "intent": "I9",
+      "category": "Correction",
+      "attributes": {
+       "content_target": "action_method"
+      },
+      "speaker": "instructor"
+     },
+     "focal": false
+    }
+   ],
+   "keyframes": {
+    "es": {
+     "t": 260.58,
+     "file": "media/showcase/wtag_t37_visibility_es.jpg"
+    },
+    "eo": {
+     "t": 263.32,
+     "file": "media/showcase/wtag_t37_visibility_eo.jpg"
+    },
+    "lu": {
+     "t": 269.3,
+     "file": "media/showcase/wtag_t37_visibility_lu.jpg"
+    },
+    "target": {
+     "t": 267.19,
+     "file": "media/showcase/wtag_t37_visibility_target.jpg"
+    }
+   }
+  },
+  {
+   "id": "wtag_t15_progress",
+   "group": "type",
+   "decision": null,
+   "dataset": "wtag",
+   "task": "coffee",
+   "session": "T15",
+   "session_duration_s": 704.752,
+   "range": [
+    28.1,
+    41.0
+   ],
+   "clip": "media/showcase/wtag_t15_progress.mp4",
+   "poster": "media/showcase/wtag_t15_progress.jpg",
+   "captions": "media/showcase/wtag_t15_progress.vtt",
+   "has_audio": true,
+   "focus": null,
+   "title": "A step begins",
+   "takeaway": "The user reaches for the water jug: valid progress, no error. The user does not yet know how much water to add, so the instruction is necessary as soon as the step visibly starts.",
+   "note": null,
+   "focal_rid": "T15_R0002",
+   "moment_captions": null,
+   "dims": null,
+   "steps": [
+    {
+     "name": "Boil water",
+     "kind": "step",
+     "t0": 18.754,
+     "t1": 96.134
+    }
+   ],
+   "utterances": [
+    {
+     "uid": 21423,
+     "t0": 28.1,
+     "t1": 29.8,
+     "speaker": "user",
+     "text": "oh oh .. I see okay",
+     "intent": "U5",
+     "category": "Acknowledgment / Uptake",
+     "attributes": null
+    },
+    {
+     "uid": 21425,
+     "t0": 29.8,
+     "t1": 32.33,
+     "speaker": "user",
+     "text": "so water's right here oh .. is that yeah water",
+     "intent": "U6",
+     "category": "Task Narration",
+     "attributes": {
+      "narration_type": "ongoing_action"
+     }
+    },
+    {
+     "uid": 21427,
+     "t0": 32.39,
+     "t1": 35.39,
+     "speaker": "instructor",
+     "text": "so you should measure 12 ounces of water",
+     "intent": "I3",
+     "category": "Instruction",
+     "attributes": {
+      "content_target": "quantity_parameter"
+     }
+    },
+    {
+     "uid": 21428,
+     "t0": 36.79,
+     "t1": 37.6,
+     "speaker": "user",
+     "text": "okay",
+     "intent": "U5",
+     "category": "Acknowledgment / Uptake",
+     "attributes": null
+    },
+    {
+     "uid": 21429,
+     "t0": 39.76,
+     "t1": 40.63,
+     "speaker": "user",
+     "text": "twelve",
+     "intent": "U6",
+     "category": "Task Narration",
+     "attributes": {
+      "narration_type": "ongoing_action"
+     }
+    }
+   ],
+   "actions": [
+    {
+     "aid": 3098,
+     "kind": "action",
+     "t0": 29.2,
+     "t1": 30,
+     "description": "The user reaches for and grabs the water bottle on the counter.",
+     "validity": "VALID",
+     "task_effects": [
+      "PROGRESS",
+      "RECOVERY"
+     ],
+     "state_label": null,
+     "verb": "grab"
+    },
+    {
+     "aid": 3099,
+     "kind": "action",
+     "t0": 30,
+     "t1": 33.8,
+     "description": "The user grabs the plastic milk jug on the counter with their right hand.",
+     "validity": "VALID",
+     "task_effects": [
+      "PROGRESS"
+     ],
+     "state_label": null,
+     "verb": "grab"
+    },
+    {
+     "aid": 3100,
+     "kind": "action",
+     "t0": 37.46,
+     "t1": 41,
+     "description": "The user grabs the measuring cup with their left hand.",
+     "validity": "VALID",
+     "task_effects": [
+      "PROGRESS"
+     ],
+     "state_label": null,
+     "verb": "grab"
+    }
+   ],
+   "interventions": [
+    {
+     "rid": "T15_R0002",
+     "uid": 21427,
+     "side": "proactive",
+     "source": "USER_ACTION_STATE",
+     "types": [
+      "PROGRESS_OK"
+     ],
+     "type": "PROGRESS_OK",
+     "policy": "NECESSARY",
+     "wait": "censored",
+     "anchors": {
+      "es": 29.72,
+      "eo": 31.46,
+      "lu": 36.76
+     },
+     "events": [
+      {
+       "id": "a:3099",
+       "kind": "action",
+       "aid": 3099,
+       "t0": 30,
+       "t1": 33.8,
+       "text": "The user grabs the plastic milk jug on the counter with their right hand.",
+       "validity": "VALID",
+       "state_label": null,
+       "task_effects": [
+        "PROGRESS"
+       ],
+       "note": null
+      }
+     ],
+     "target": {
+      "t0": 32.39,
+      "t1": 35.39,
+      "text": "so you should measure 12 ounces of water",
+      "intent": "I3",
+      "category": "Instruction",
+      "attributes": {
+       "content_target": "quantity_parameter"
+      },
+      "speaker": "instructor"
+     },
+     "focal": true
+    }
+   ],
+   "keyframes": {
+    "es": {
+     "t": 29.72,
+     "file": "media/showcase/wtag_t15_progress_es.jpg"
+    },
+    "eo": {
+     "t": 31.46,
+     "file": "media/showcase/wtag_t15_progress_eo.jpg"
+    },
+    "lu": {
+     "t": 36.76,
+     "file": "media/showcase/wtag_t15_progress_lu.jpg"
+    },
+    "target": {
+     "t": 32.39,
+     "file": "media/showcase/wtag_t15_progress_target.jpg"
+    }
+   }
+  },
+  {
+   "id": "wtag_t14_progress_mixed",
+   "group": "type",
+   "decision": null,
+   "dataset": "wtag",
+   "task": "pinwheel",
+   "session": "T14",
+   "session_duration_s": 532.168,
+   "range": [
+    349.02,
+    375.66
+   ],
+   "clip": "media/showcase/wtag_t14_progress_mixed.mp4",
+   "poster": "media/showcase/wtag_t14_progress_mixed.jpg",
+   "captions": "media/showcase/wtag_t14_progress_mixed.vtt",
+   "has_audio": true,
+   "focus": null,
+   "title": "Progress confirmed in words",
+   "takeaway": "The dental floss (used to slice the roll) is under the roll and the user says \u201cok\u201d. The action and the words together are the evidence; because a user utterance is part of it, the intervention counts as reactive, and the next instruction is necessary.",
+   "note": null,
+   "focal_rid": "T14_R0031",
+   "moment_captions": null,
+   "dims": null,
+   "steps": [
+    {
+     "name": "Slide floss",
+     "kind": "step",
+     "t0": 311.222,
+     "t1": 382.292
+    }
+   ],
+   "utterances": [
+    {
+     "uid": 21381,
+     "t0": 349.96,
+     "t1": 358.04,
+     "speaker": "instructor",
+     "text": "so you'll want to slide the floss under the tortilla perpendicular to the roll",
+     "intent": "I3",
+     "category": "Instruction",
+     "attributes": {
+      "content_target": "action_method"
+     }
+    },
+    {
+     "uid": 21382,
+     "t0": 359.52,
+     "t1": 359.96,
+     "speaker": "user",
+     "text": "ok",
+     "intent": "U5",
+     "category": "Acknowledgment / Uptake",
+     "attributes": null
+    },
+    {
+     "uid": 21383,
+     "t0": 363.3,
+     "t1": 363.8,
+     "speaker": "user",
+     "text": "how about that\uff1f",
+     "intent": "U2",
+     "category": "Verification Question",
+     "attributes": {
+      "content_target": "state_result"
+     }
+    },
+    {
+     "uid": 21384,
+     "t0": 364.51,
+     "t1": 365.68,
+     "speaker": "instructor",
+     "text": "yeah that looks good",
+     "intent": "I2",
+     "category": "Approval",
+     "attributes": {
+      "content_target": "state_result"
+     }
+    },
+    {
+     "uid": 21385,
+     "t0": 365.81,
+     "t1": 366.28,
+     "speaker": "user",
+     "text": "ok",
+     "intent": "U5",
+     "category": "Acknowledgment / Uptake",
+     "attributes": null
+    },
+    {
+     "uid": 21386,
+     "t0": 367.29,
+     "t1": 374.99,
+     "speaker": "instructor",
+     "text": "so between each of the toothpicks you'll want to cross the ends of the floss over the top of the tortilla",
+     "intent": "I3",
+     "category": "Instruction",
+     "attributes": {
+      "content_target": "action_method"
+     }
+    }
+   ],
+   "actions": [
+    {
+     "aid": 3073,
+     "kind": "action",
+     "t0": 350.1,
+     "t1": 367.08,
+     "description": "The user slides a strand of dental floss under the tortilla roll on the cutting board.",
+     "validity": "VALID",
+     "task_effects": [
+      "COMPLETION"
+     ],
+     "state_label": null,
+     "verb": "slide"
+    }
+   ],
+   "interventions": [
+    {
+     "rid": "T14_R0029",
+     "uid": 21381,
+     "side": "proactive",
+     "source": "USER_ACTION_STATE",
+     "types": [
+      "PROGRESS_OK"
+     ],
+     "type": "PROGRESS_OK",
+     "policy": "NECESSARY",
+     "wait": "censored",
+     "anchors": {
+      "es": 349.02,
+      "eo": 350.53,
+      "lu": 359.45
+     },
+     "events": [
+      {
+       "id": "a:3072",
+       "kind": "action",
+       "aid": 3072,
+       "t0": 329.29,
+       "t1": 348.4,
+       "text": "The user pulls a strand of dental floss from the container with both hands.",
+       "validity": "VALID",
+       "state_label": null,
+       "task_effects": [
+        "PROGRESS"
+       ],
+       "note": null
+      }
+     ],
+     "target": {
+      "t0": 349.96,
+      "t1": 358.04,
+      "text": "so you'll want to slide the floss under the tortilla perpendicular to the roll",
+      "intent": "I3",
+      "category": "Instruction",
+      "attributes": {
+       "content_target": "action_method"
+      },
+      "speaker": "instructor"
+     },
+     "focal": false
+    },
+    {
+     "rid": "T14_R0030",
+     "uid": 21384,
+     "side": "reactive",
+     "source": "USER_UTTERANCE",
+     "types": [
+      "USER_QUERY"
+     ],
+     "type": "USER_QUERY",
+     "policy": "NECESSARY",
+     "wait": null,
+     "anchors": {
+      "r": 363.8,
+      "lu": 365.81
+     },
+     "events": [
+      {
+       "id": "u:21383",
+       "kind": "utterance",
+       "speaker": "user",
+       "uid": 21383,
+       "t0": 363.3,
+       "t1": 363.8,
+       "text": "how about that\uff1f",
+       "intent": "U2"
+      }
+     ],
+     "target": {
+      "t0": 364.51,
+      "t1": 365.68,
+      "text": "yeah that looks good",
+      "intent": "I2",
+      "category": "Approval",
+      "attributes": {
+       "content_target": "state_result"
+      },
+      "speaker": "instructor"
+     },
+     "focal": false
+    },
+    {
+     "rid": "T14_R0031",
+     "uid": 21386,
+     "side": "reactive",
+     "source": "MIXED",
+     "types": [
+      "PROGRESS_OK"
+     ],
+     "type": "PROGRESS_OK",
+     "policy": "NECESSARY",
+     "wait": null,
+     "anchors": {
+      "r": 366.28,
+      "lu": 375.66
+     },
+     "events": [
+      {
+       "id": "a:3073",
+       "kind": "action",
+       "aid": 3073,
+       "t0": 350.1,
+       "t1": 367.08,
+       "text": "The user slides a strand of dental floss under the tortilla roll on the cutting board.",
+       "validity": "VALID",
+       "state_label": null,
+       "task_effects": [
+        "COMPLETION"
+       ],
+       "note": null
+      },
+      {
+       "id": "u:21385",
+       "kind": "utterance",
+       "speaker": "user",
+       "uid": 21385,
+       "t0": 365.81,
+       "t1": 366.28,
+       "text": "ok",
+       "intent": "U5"
+      }
+     ],
+     "target": {
+      "t0": 367.29,
+      "t1": 374.99,
+      "text": "so between each of the toothpicks you'll want to cross the ends of the floss over the top of the tortilla",
+      "intent": "I3",
+      "category": "Instruction",
+      "attributes": {
+       "content_target": "action_method"
+      },
+      "speaker": "instructor"
+     },
+     "focal": true
+    }
+   ],
+   "keyframes": {
+    "r": {
+     "t": 366.28,
+     "file": "media/showcase/wtag_t14_progress_mixed_r.jpg"
+    },
+    "lu": {
+     "t": 375.66,
+     "file": "media/showcase/wtag_t14_progress_mixed_lu.jpg"
+    },
+    "target": {
+     "t": 367.29,
+     "file": "media/showcase/wtag_t14_progress_mixed_target.jpg"
+    }
+   }
+  },
+  {
+   "id": "wtag_t18_stepdone",
+   "group": "type",
+   "decision": null,
+   "dataset": "wtag",
+   "task": "coffee",
+   "session": "T18",
+   "session_duration_s": 314.208,
+   "range": [
+    24.8,
+    52.2
+   ],
+   "clip": "media/showcase/wtag_t18_stepdone.mp4",
+   "poster": "media/showcase/wtag_t18_stepdone.jpg",
+   "captions": "media/showcase/wtag_t18_stepdone.vtt",
+   "has_audio": true,
+   "focus": null,
+   "title": "A step completes, the next follows",
+   "takeaway": "The folded filter goes into the dripper, which completes the step, and the instruction that follows is necessary. In WTaG, where users work from a recipe at their own pace, only about one step completion in eight (12.9 %) is followed by a necessary intervention.",
+   "note": null,
+   "focal_rid": "T18_R0005",
+   "moment_captions": null,
+   "dims": null,
+   "steps": [
+    {
+     "name": "Assemble filter cone",
+     "kind": "step",
+     "t0": 23.586,
+     "t1": 49.515
+    },
+    {
+     "name": "Prepare filter",
+     "kind": "step",
+     "t0": 49.678,
+     "t1": 52.013
+    }
+   ],
+   "utterances": [
+    {
+     "uid": 21878,
+     "t0": 32.78,
+     "t1": 40.11,
+     "speaker": "instructor",
+     "text": "oh to prepare the filter cone you'll want to fold the paper in half to create a semicircle and then in half again",
+     "intent": "I3",
+     "category": "Instruction",
+     "attributes": {
+      "content_target": "action_method"
+     }
+    },
+    {
+     "uid": 21879,
+     "t0": 42.99,
+     "t1": 46.89,
+     "speaker": "instructor",
+     "text": "and then place it inside the dripper and spread it open to create a cone",
+     "intent": "I3",
+     "category": "Instruction",
+     "attributes": {
+      "content_target": "action_method"
+     }
+    },
+    {
+     "uid": 21880,
+     "t0": 48.12,
+     "t1": 50.56,
+     "speaker": "instructor",
+     "text": "and you can place that on top of the mug",
+     "intent": "I3",
+     "category": "Instruction",
+     "attributes": {
+      "content_target": "action_method"
+     }
+    }
+   ],
+   "actions": [
+    {
+     "aid": 3280,
+     "kind": "action",
+     "t0": 24.8,
+     "t1": 29.5,
+     "description": "The person removes a paper filter from its packaging.",
+     "validity": "VALID",
+     "task_effects": [
+      "PROGRESS"
+     ],
+     "state_label": null,
+     "verb": "remove"
+    },
+    {
+     "aid": 3281,
+     "kind": "action",
+     "t0": 30.9,
+     "t1": 33.75,
+     "description": "The person places the paper filter into the dripper.",
+     "validity": "DEVIATION",
+     "task_effects": [
+      "DEVIATION_ONSET"
+     ],
+     "state_label": null,
+     "verb": "place"
+    },
+    {
+     "aid": 3282,
+     "kind": "action",
+     "t0": 37.23,
+     "t1": 43.5,
+     "description": "The person folds the paper coffee filter in half with both hands.",
+     "validity": "VALID",
+     "task_effects": [
+      "PROGRESS",
+      "RECOVERY"
+     ],
+     "state_label": null,
+     "verb": "fold"
+    },
+    {
+     "aid": 3283,
+     "kind": "action",
+     "t0": 44.5,
+     "t1": 50.8,
+     "description": "The person places the folded paper filter into the dripper.",
+     "validity": "VALID",
+     "task_effects": [
+      "COMPLETION"
+     ],
+     "state_label": null,
+     "verb": "place"
+    },
+    {
+     "aid": 3284,
+     "kind": "action",
+     "t0": 51,
+     "t1": 52.2,
+     "description": "The person places the dripper onto the mug.",
+     "validity": "VALID",
+     "task_effects": [
+      "COMPLETION"
+     ],
+     "state_label": null,
+     "verb": "place"
+    }
+   ],
+   "interventions": [
+    {
+     "rid": "T18_R0003",
+     "uid": 21878,
+     "side": "proactive",
+     "source": "USER_ACTION_STATE",
+     "types": [
+      "ERROR"
+     ],
+     "type": "ERROR",
+     "policy": "NECESSARY",
+     "wait": "censored",
+     "anchors": {
+      "es": 24.83,
+      "eo": 32.66,
+      "lu": 37.72
+     },
+     "events": [
+      {
+       "id": "a:3281",
+       "kind": "action",
+       "aid": 3281,
+       "t0": 30.9,
+       "t1": 33.75,
+       "text": "The person places the paper filter into the dripper.",
+       "validity": "DEVIATION",
+       "state_label": null,
+       "task_effects": [
+        "DEVIATION_ONSET"
+       ],
+       "note": null
+      }
+     ],
+     "target": {
+      "t0": 32.78,
+      "t1": 40.11,
+      "text": "oh to prepare the filter cone you'll want to fold the paper in half to create a semicircle and then in half again",
+      "intent": "I3",
+      "category": "Instruction",
+      "attributes": {
+       "content_target": "action_method"
+      },
+      "speaker": "instructor"
+     },
+     "focal": false
+    },
+    {
+     "rid": "T18_R0004",
+     "uid": 21879,
+     "side": "proactive",
+     "source": "USER_ACTION_STATE",
+     "types": [
+      "RECOVERY",
+      "PROGRESS_OK"
+     ],
+     "type": "RECOVERY",
+     "policy": "NECESSARY",
+     "wait": "censored",
+     "anchors": {
+      "es": 41.95,
+      "eo": 42.92,
+      "lu": 46.32
+     },
+     "events": [
+      {
+       "id": "a:3282",
+       "kind": "action",
+       "aid": 3282,
+       "t0": 37.23,
+       "t1": 43.5,
+       "text": "The person folds the paper coffee filter in half with both hands.",
+       "validity": "VALID",
+       "state_label": null,
+       "task_effects": [
+        "PROGRESS",
+        "RECOVERY"
+       ],
+       "note": null
+      }
+     ],
+     "target": {
+      "t0": 42.99,
+      "t1": 46.89,
+      "text": "and then place it inside the dripper and spread it open to create a cone",
+      "intent": "I3",
+      "category": "Instruction",
+      "attributes": {
+       "content_target": "action_method"
+      },
+      "speaker": "instructor"
+     },
+     "focal": false
+    },
+    {
+     "rid": "T18_R0005",
+     "uid": 21880,
+     "side": "proactive",
+     "source": "USER_ACTION_STATE",
+     "types": [
+      "STEP_DONE"
+     ],
+     "type": "STEP_DONE",
+     "policy": "NECESSARY",
+     "wait": "censored",
+     "anchors": {
+      "es": 46.28,
+      "eo": 48,
+      "lu": 51.2
+     },
+     "events": [
+      {
+       "id": "a:3283",
+       "kind": "action",
+       "aid": 3283,
+       "t0": 44.5,
+       "t1": 50.8,
+       "text": "The person places the folded paper filter into the dripper.",
+       "validity": "VALID",
+       "state_label": null,
+       "task_effects": [
+        "COMPLETION"
+       ],
+       "note": null
+      }
+     ],
+     "target": {
+      "t0": 48.12,
+      "t1": 50.56,
+      "text": "and you can place that on top of the mug",
+      "intent": "I3",
+      "category": "Instruction",
+      "attributes": {
+       "content_target": "action_method"
+      },
+      "speaker": "instructor"
+     },
+     "focal": true
+    }
+   ],
+   "keyframes": {
+    "es": {
+     "t": 46.28,
+     "file": "media/showcase/wtag_t18_stepdone_es.jpg"
+    },
+    "eo": {
+     "t": 48,
+     "file": "media/showcase/wtag_t18_stepdone_eo.jpg"
+    },
+    "lu": {
+     "t": 51.2,
+     "file": "media/showcase/wtag_t18_stepdone_lu.jpg"
+    },
+    "target": {
+     "t": 48.12,
+     "file": "media/showcase/wtag_t18_stepdone_target.jpg"
+    }
+   }
+  },
+  {
+   "id": "wtag_t42_stepdone_speech",
+   "group": "type",
+   "decision": null,
+   "dataset": "wtag",
+   "task": "coffee",
+   "session": "T42",
+   "session_duration_s": 736.858,
+   "range": [
+    403.44,
+    422.93
+   ],
+   "clip": "media/showcase/wtag_t42_stepdone_speech.mp4",
+   "poster": "media/showcase/wtag_t42_stepdone_speech.jpg",
+   "captions": "media/showcase/wtag_t42_stepdone_speech.vtt",
+   "has_audio": true,
+   "focus": null,
+   "title": "A step reported done",
+   "takeaway": "\u201cIt seems the water has been boiled\u201d: the user reports the completion, and the next instruction is necessary. The evidence is the report, so the window opens when it ends.",
+   "note": null,
+   "focal_rid": "T42_R0027",
+   "moment_captions": null,
+   "dims": null,
+   "steps": [
+    {
+     "name": "Grind coffee beans",
+     "kind": "step",
+     "t0": 239.884,
+     "t1": 404.854
+    },
+    {
+     "name": "Check water temperature",
+     "kind": "step",
+     "t0": 404.911,
+     "t1": 454.065
+    }
+   ],
+   "utterances": [
+    {
+     "uid": 23639,
+     "t0": 403.44,
+     "t1": 406.57,
+     "speaker": "user",
+     "text": "oh it seems the water has been boiled",
+     "intent": "U6",
+     "category": "Task Narration",
+     "attributes": {
+      "narration_type": "completed_action_progress"
+     }
+    },
+    {
+     "uid": 23640,
+     "t0": 406.92,
+     "t1": 410.05,
+     "speaker": "instructor",
+     "text": "ok great um let's check the temperature of the water",
+     "intent": "I3",
+     "category": "Instruction",
+     "attributes": {
+      "content_target": "sequence_step"
+     }
+    },
+    {
+     "uid": 23641,
+     "t0": 410.52,
+     "t1": 411.15,
+     "speaker": "user",
+     "text": "ok",
+     "intent": "U5",
+     "category": "Acknowledgment / Uptake",
+     "attributes": null
+    },
+    {
+     "uid": 23642,
+     "t0": 411.34,
+     "t1": 416.09,
+     "speaker": "instructor",
+     "text": "see if it's anywhere between a hundred ninety five to two oh five degrees in Fahrenheit",
+     "intent": "I3",
+     "category": "Instruction",
+     "attributes": {
+      "content_target": "quantity_parameter"
+     }
+    },
+    {
+     "uid": 23643,
+     "t0": 419.38,
+     "t1": 421.56,
+     "speaker": "user",
+     "text": "so I need to stack it in here?",
+     "intent": "U2",
+     "category": "Verification Question",
+     "attributes": {
+      "content_target": "action_method"
+     }
+    },
+    {
+     "uid": 23644,
+     "t0": 421.53,
+     "t1": 421.96,
+     "speaker": "instructor",
+     "text": "yep",
+     "intent": "I2",
+     "category": "Approval",
+     "attributes": {
+      "content_target": "action_method"
+     }
+    },
+    {
+     "uid": 23645,
+     "t0": 422.44,
+     "t1": 422.93,
+     "speaker": "user",
+     "text": "ok",
+     "intent": "U5",
+     "category": "Acknowledgment / Uptake",
+     "attributes": null
+    }
+   ],
+   "actions": [
+    {
+     "aid": 4483,
+     "kind": "state_event",
+     "t0": 404.75,
+     "t1": 412.75,
+     "description": "The user is inactive, looking at the coffee setup while the instructor speaks about checking the water temperature.",
+     "validity": null,
+     "task_effects": null,
+     "state_label": "STALL",
+     "verb": null
+    },
+    {
+     "aid": 5544,
+     "kind": "action",
+     "t0": 410.58,
+     "t1": 420.29,
+     "description": "user grabs the thermometer",
+     "validity": null,
+     "task_effects": [
+      "PROGRESS"
+     ],
+     "state_label": null,
+     "verb": "grab"
+    }
+   ],
+   "interventions": [
+    {
+     "rid": "T42_R0027",
+     "uid": 23640,
+     "side": "reactive",
+     "source": "USER_UTTERANCE",
+     "types": [
+      "USER_REPORT",
+      "STEP_DONE"
+     ],
+     "type": "STEP_DONE",
+     "policy": "NECESSARY",
+     "wait": null,
+     "anchors": {
+      "r": 406.57,
+      "lu": 410.5
+     },
+     "events": [
+      {
+       "id": "u:23639",
+       "kind": "utterance",
+       "speaker": "user",
+       "uid": 23639,
+       "t0": 403.44,
+       "t1": 406.57,
+       "text": "oh it seems the water has been boiled",
+       "intent": "U6"
+      }
+     ],
+     "target": {
+      "t0": 406.92,
+      "t1": 410.05,
+      "text": "ok great um let's check the temperature of the water",
+      "intent": "I3",
+      "category": "Instruction",
+      "attributes": {
+       "content_target": "sequence_step"
+      },
+      "speaker": "instructor"
+     },
+     "focal": true
+    },
+    {
+     "rid": "T42_R0028",
+     "uid": 23642,
+     "side": "proactive",
+     "source": "USER_ACTION_STATE",
+     "types": [
+      "PROGRESS_OK"
+     ],
+     "type": "PROGRESS_OK",
+     "policy": "NECESSARY",
+     "wait": "censored",
+     "anchors": {
+      "es": 411.18,
+      "eo": 414.22,
+      "lu": 419.37
+     },
+     "events": [
+      {
+       "id": "a:5544",
+       "kind": "action",
+       "aid": 5544,
+       "t0": 410.58,
+       "t1": 420.29,
+       "text": "user grabs the thermometer",
+       "validity": null,
+       "state_label": null,
+       "task_effects": [
+        "PROGRESS"
+       ],
+       "note": null
+      }
+     ],
+     "target": {
+      "t0": 411.34,
+      "t1": 416.09,
+      "text": "see if it's anywhere between a hundred ninety five to two oh five degrees in Fahrenheit",
+      "intent": "I3",
+      "category": "Instruction",
+      "attributes": {
+       "content_target": "quantity_parameter"
+      },
+      "speaker": "instructor"
+     },
+     "focal": false
+    },
+    {
+     "rid": "T42_R0029",
+     "uid": 23644,
+     "side": "reactive",
+     "source": "USER_UTTERANCE",
+     "types": [
+      "USER_QUERY",
+      "PROGRESS_OK"
+     ],
+     "type": "PROGRESS_OK",
+     "policy": "NECESSARY",
+     "wait": null,
+     "anchors": {
+      "r": 421.56,
+      "lu": 422.44
+     },
+     "events": [
+      {
+       "id": "u:23643",
+       "kind": "utterance",
+       "speaker": "user",
+       "uid": 23643,
+       "t0": 419.38,
+       "t1": 421.56,
+       "text": "so I need to stack it in here?",
+       "intent": "U2"
+      }
+     ],
+     "target": {
+      "t0": 421.53,
+      "t1": 421.96,
+      "text": "yep",
+      "intent": "I2",
+      "category": "Approval",
+      "attributes": {
+       "content_target": "action_method"
+      },
+      "speaker": "instructor"
+     },
+     "focal": false
+    }
+   ],
+   "keyframes": {
+    "r": {
+     "t": 406.57,
+     "file": "media/showcase/wtag_t42_stepdone_speech_r.jpg"
+    },
+    "lu": {
+     "t": 410.5,
+     "file": "media/showcase/wtag_t42_stepdone_speech_lu.jpg"
+    },
+    "target": {
+     "t": 406.92,
+     "file": "media/showcase/wtag_t42_stepdone_speech_target.jpg"
+    }
+   }
+  },
+  {
+   "id": "wtag_t34_recovery",
+   "group": "type",
+   "decision": null,
+   "dataset": "wtag",
+   "task": "pinwheel",
+   "session": "T34",
+   "session_duration_s": 448.21,
+   "range": [
+    316.21,
+    338.43
+   ],
+   "clip": "media/showcase/wtag_t34_recovery.mp4",
+   "poster": "media/showcase/wtag_t34_recovery.jpg",
+   "captions": "media/showcase/wtag_t34_recovery.vtt",
+   "has_audio": true,
+   "focus": null,
+   "title": "Guiding the repair",
+   "takeaway": "After laying the dental floss on top of the roll by mistake, the user starts over and slides it underneath. The recovery is the evidence, and the instruction that completes the repair is necessary.",
+   "note": null,
+   "focal_rid": "T34_R0005",
+   "moment_captions": null,
+   "dims": null,
+   "steps": [
+    {
+     "name": "Slice roll",
+     "kind": "step",
+     "t0": 326.01,
+     "t1": 341.171
+    },
+    {
+     "name": "Slide floss",
+     "kind": "step",
+     "t0": 301.354,
+     "t1": 326.01
+    }
+   ],
+   "utterances": [
+    {
+     "uid": 22799,
+     "t0": 320.53,
+     "t1": 324.16,
+     "speaker": "instructor",
+     "text": "oh, you can slide, slide it under the tortilla",
+     "intent": "I9",
+     "category": "Correction",
+     "attributes": {
+      "content_target": "action_method"
+     }
+    },
+    {
+     "uid": 22800,
+     "t0": 324.59,
+     "t1": 324.9,
+     "speaker": "user",
+     "text": "oh",
+     "intent": "U5",
+     "category": "Acknowledgment / Uptake",
+     "attributes": null
+    },
+    {
+     "uid": 22801,
+     "t0": 325.41,
+     "t1": 330.98,
+     "speaker": "instructor",
+     "text": "oh yep and then cross the two ends .. over the top of the tortilla roll",
+     "intent": "I3",
+     "category": "Instruction",
+     "attributes": {
+      "content_target": "action_method"
+     }
+    },
+    {
+     "uid": 22803,
+     "t0": 330.0,
+     "t1": 330.37,
+     "speaker": "user",
+     "text": "ok",
+     "intent": "U5",
+     "category": "Acknowledgment / Uptake",
+     "attributes": null
+    },
+    {
+     "uid": 22804,
+     "t0": 331.91,
+     "t1": 334.72,
+     "speaker": "instructor",
+     "text": "and then pull yeah just like that",
+     "intent": "I2",
+     "category": "Approval",
+     "attributes": {
+      "content_target": "action_method"
+     }
+    }
+   ],
+   "actions": [
+    {
+     "aid": 5270,
+     "kind": "action",
+     "t0": 316.21,
+     "t1": 320.4,
+     "description": "The user slides dental floss not under the rolled tortilla on the cutting board.",
+     "validity": "DEVIATION",
+     "task_effects": [
+      "DEVIATION_ONSET"
+     ],
+     "state_label": null,
+     "verb": "slide"
+    },
+    {
+     "aid": 4918,
+     "kind": "action",
+     "t0": 323.88,
+     "t1": 326.8,
+     "description": "The person slides the dental floss under the tortilla roll with both hands.",
+     "validity": "VALID",
+     "task_effects": [
+      "COMPLETION",
+      "RECOVERY"
+     ],
+     "state_label": null,
+     "verb": "slide"
+    },
+    {
+     "aid": 4919,
+     "kind": "action",
+     "t0": 326.8,
+     "t1": 341.25,
+     "description": "The person crosses the dental floss over the tortilla roll with both hands.",
+     "validity": "VALID",
+     "task_effects": [
+      "COMPLETION"
+     ],
+     "state_label": null,
+     "verb": "cross"
+    }
+   ],
+   "interventions": [
+    {
+     "rid": "T34_R0004",
+     "uid": 22799,
+     "side": "proactive",
+     "source": "USER_ACTION_STATE",
+     "types": [
+      "ERROR"
+     ],
+     "type": "ERROR",
+     "policy": "NECESSARY",
+     "wait": "censored",
+     "anchors": {
+      "es": 316.27,
+      "eo": 320.33,
+      "lu": 324.7
+     },
+     "events": [
+      {
+       "id": "a:5270",
+       "kind": "action",
+       "aid": 5270,
+       "t0": 316.21,
+       "t1": 320.4,
+       "text": "The user slides dental floss not under the rolled tortilla on the cutting board.",
+       "validity": "DEVIATION",
+       "state_label": null,
+       "task_effects": [
+        "DEVIATION_ONSET"
+       ],
+       "note": null
+      }
+     ],
+     "target": {
+      "t0": 320.53,
+      "t1": 324.16,
+      "text": "oh, you can slide, slide it under the tortilla",
+      "intent": "I9",
+      "category": "Correction",
+      "attributes": {
+       "content_target": "action_method"
+      },
+      "speaker": "instructor"
+     },
+     "focal": false
+    },
+    {
+     "rid": "T34_R0005",
+     "uid": 22801,
+     "side": "proactive",
+     "source": "USER_ACTION_STATE",
+     "types": [
+      "RECOVERY",
+      "PROGRESS_OK"
+     ],
+     "type": "RECOVERY",
+     "policy": "NECESSARY",
+     "wait": "censored",
+     "anchors": {
+      "es": 324.65,
+      "eo": 325.34,
+      "lu": 331.95
+     },
+     "events": [
+      {
+       "id": "a:4918",
+       "kind": "action",
+       "aid": 4918,
+       "t0": 323.88,
+       "t1": 326.8,
+       "text": "The person slides the dental floss under the tortilla roll with both hands.",
+       "validity": "VALID",
+       "state_label": null,
+       "task_effects": [
+        "COMPLETION",
+        "RECOVERY"
+       ],
+       "note": null
+      }
+     ],
+     "target": {
+      "t0": 325.41,
+      "t1": 330.98,
+      "text": "oh yep and then cross the two ends .. over the top of the tortilla roll",
+      "intent": "I3",
+      "category": "Instruction",
+      "attributes": {
+       "content_target": "action_method"
+      },
+      "speaker": "instructor"
+     },
+     "focal": true
+    },
+    {
+     "rid": "T34_R0006",
+     "uid": 22804,
+     "side": "proactive",
+     "source": "USER_ACTION_STATE",
+     "types": [
+      "PROGRESS_OK"
+     ],
+     "type": "PROGRESS_OK",
+     "policy": "OPTIONAL",
+     "wait": "censored",
+     "anchors": {
+      "es": 331.9,
+      "eo": 331.92,
+      "lu": 338.43
+     },
+     "events": [
+      {
+       "id": "a:4919",
+       "kind": "action",
+       "aid": 4919,
+       "t0": 326.8,
+       "t1": 341.25,
+       "text": "The person crosses the dental floss over the tortilla roll with both hands.",
+       "validity": "VALID",
+       "state_label": null,
+       "task_effects": [
+        "COMPLETION"
+       ],
+       "note": null
+      }
+     ],
+     "target": {
+      "t0": 331.91,
+      "t1": 334.72,
+      "text": "and then pull yeah just like that",
+      "intent": "I2",
+      "category": "Approval",
+      "attributes": {
+       "content_target": "action_method"
+      },
+      "speaker": "instructor"
+     },
+     "focal": false
+    }
+   ],
+   "keyframes": {
+    "es": {
+     "t": 324.65,
+     "file": "media/showcase/wtag_t34_recovery_es.jpg"
+    },
+    "eo": {
+     "t": 325.34,
+     "file": "media/showcase/wtag_t34_recovery_eo.jpg"
+    },
+    "lu": {
+     "t": 331.95,
+     "file": "media/showcase/wtag_t34_recovery_lu.jpg"
+    },
+    "target": {
+     "t": 325.41,
+     "file": "media/showcase/wtag_t34_recovery_target.jpg"
+    }
+   }
+  },
+  {
+   "id": "wtag_t45_dialogue",
+   "group": "type",
+   "decision": null,
+   "dataset": "wtag",
+   "task": "coffee",
+   "session": "T45",
+   "session_duration_s": 558.396,
+   "range": [
+    340.85,
+    370.37
+   ],
+   "clip": "media/showcase/wtag_t45_dialogue.mp4",
+   "poster": "media/showcase/wtag_t45_dialogue.jpg",
+   "captions": "media/showcase/wtag_t45_dialogue.vtt",
+   "has_audio": true,
+   "focus": null,
+   "title": "Talk around the task",
+   "takeaway": "\u201cWhy not buy a coffee machine?\u201d The reply is conversation, not guidance: optional, since small talk never has to be answered, and silence would have been fine.",
+   "note": null,
+   "focal_rid": "T45_R0016",
+   "moment_captions": null,
+   "dims": null,
+   "steps": [
+    {
+     "name": "Wet grounds",
+     "kind": "step",
+     "t0": 303.177,
+     "t1": 341.541
+    },
+    {
+     "name": "Pour water",
+     "kind": "step",
+     "t0": 341.598,
+     "t1": 453.011
+    }
+   ],
+   "utterances": [
+    {
+     "uid": 23962,
+     "t0": 340.85,
+     "t1": 343.01,
+     "speaker": "user",
+     "text": "circular motion ok",
+     "intent": "U5",
+     "category": "Acknowledgment / Uptake",
+     "attributes": null
+    },
+    {
+     "uid": 23963,
+     "t0": 355.16,
+     "t1": 356.71,
+     "speaker": "user",
+     "text": "why not buy a coffee machine?",
+     "intent": "U8",
+     "category": "Affective Expression / Social Talk",
+     "attributes": {
+      "expression_type": "task_related_aside"
+     }
+    },
+    {
+     "uid": 23964,
+     "t0": 357.63,
+     "t1": 362.35,
+     "speaker": "instructor",
+     "text": "this is the classic dripper coffee",
+     "intent": "I13",
+     "category": "Other",
+     "attributes": null
+    },
+    {
+     "uid": 23965,
+     "t0": 362.47,
+     "t1": 363.12,
+     "speaker": "user",
+     "text": "ohh",
+     "intent": "U8",
+     "category": "Affective Expression / Social Talk",
+     "attributes": {
+      "expression_type": "affective"
+     }
+    },
+    {
+     "uid": 23966,
+     "t0": 364.19,
+     "t1": 367.59,
+     "speaker": "user",
+     "text": "enjoy the working",
+     "intent": "U8",
+     "category": "Affective Expression / Social Talk",
+     "attributes": {
+      "expression_type": "task_related_aside"
+     }
+    },
+    {
+     "uid": 23967,
+     "t0": 367.74,
+     "t1": 369.45,
+     "speaker": "instructor",
+     "text": "the old fashioned way",
+     "intent": "I13",
+     "category": "Other",
+     "attributes": null
+    },
+    {
+     "uid": 23968,
+     "t0": 369.25,
+     "t1": 369.87,
+     "speaker": "user",
+     "text": "Ok",
+     "intent": "U5",
+     "category": "Acknowledgment / Uptake",
+     "attributes": null
+    }
+   ],
+   "actions": [
+    {
+     "aid": 4575,
+     "kind": "action",
+     "t0": 342.59,
+     "t1": 370.37,
+     "description": "The user pours hot water from the kettle into the coffee filter in a circular motion.",
+     "validity": "VALID",
+     "task_effects": [
+      "PROGRESS"
+     ],
+     "state_label": null,
+     "verb": "pour"
+    }
+   ],
+   "interventions": [
+    {
+     "rid": "T45_R0016",
+     "uid": 23964,
+     "side": "reactive",
+     "source": "USER_UTTERANCE",
+     "types": [
+      "DIALOG_OTHER"
+     ],
+     "type": "DIALOG_OTHER",
+     "policy": "OPTIONAL",
+     "wait": null,
+     "anchors": {
+      "r": 356.71,
+      "lu": 362.48
+     },
+     "events": [
+      {
+       "id": "u:23963",
+       "kind": "utterance",
+       "speaker": "user",
+       "uid": 23963,
+       "t0": 355.16,
+       "t1": 356.71,
+       "text": "why not buy a coffee machine?",
+       "intent": "U8"
+      }
+     ],
+     "target": {
+      "t0": 357.63,
+      "t1": 362.35,
+      "text": "this is the classic dripper coffee",
+      "intent": "I13",
+      "category": "Other",
+      "attributes": null,
+      "speaker": "instructor"
+     },
+     "focal": true
+    },
+    {
+     "rid": "T45_R0017",
+     "uid": 23967,
+     "side": "reactive",
+     "source": "USER_UTTERANCE",
+     "types": [
+      "DIALOG_OTHER"
+     ],
+     "type": "DIALOG_OTHER",
+     "policy": "OPTIONAL",
+     "wait": null,
+     "anchors": {
+      "r": 367.59,
+      "lu": 369.25
+     },
+     "events": [
+      {
+       "id": "u:23966",
+       "kind": "utterance",
+       "speaker": "user",
+       "uid": 23966,
+       "t0": 364.19,
+       "t1": 367.59,
+       "text": "enjoy the working",
+       "intent": "U8"
+      }
+     ],
+     "target": {
+      "t0": 367.74,
+      "t1": 369.45,
+      "text": "the old fashioned way",
+      "intent": "I13",
+      "category": "Other",
+      "attributes": null,
+      "speaker": "instructor"
+     },
+     "focal": false
+    }
+   ],
+   "keyframes": {
+    "r": {
+     "t": 356.71,
+     "file": "media/showcase/wtag_t45_dialogue_r.jpg"
+    },
+    "lu": {
+     "t": 362.48,
+     "file": "media/showcase/wtag_t45_dialogue_lu.jpg"
+    },
+    "target": {
+     "t": 357.63,
+     "file": "media/showcase/wtag_t45_dialogue_target.jpg"
+    }
+   }
+  },
+  {
+   "id": "holo_r078_stepdone",
+   "group": "type",
+   "decision": null,
+   "dataset": "holoassist",
+   "task": "setup gopro",
+   "session": "R078-21July-GoPro",
+   "session_duration_s": 211.664,
+   "range": [
+    55.5,
+    73.0
+   ],
+   "clip": "media/showcase/holo_r078_stepdone.mp4",
+   "poster": "media/showcase/holo_r078_stepdone.jpg",
+   "captions": "media/showcase/holo_r078_stepdone.vtt",
+   "has_audio": true,
+   "focus": null,
+   "title": "The next step follows every completion",
+   "takeaway": "The GoPro is closed; the instructor immediately gives the next step, and after the next action the one after that. In HoloAssist, where users depend on the instructor for each step, two step completions in three (65.9 %) are followed by a necessary intervention.",
+   "note": "HoloAssist annotation layers are model-proposed; this session is the one with human review in the release. HoloAssist releases its audio pitch-shifted; the clip keeps that track, loudness-normalized, and both speakers also appear as captions.",
+   "focal_rid": "R078-21July-GoPro_R0015",
+   "moment_captions": null,
+   "dims": null,
+   "steps": [
+    {
+     "name": "The student changes the SD card for the GoPro.",
+     "kind": "step",
+     "t0": 7.2,
+     "t1": 60.3
+    },
+    {
+     "name": "The student turns on the GoPro.",
+     "kind": "step",
+     "t0": 64.4,
+     "t1": 86.2
+    }
+   ],
+   "utterances": [
+    {
+     "uid": 25436,
+     "t0": 56.4,
+     "t1": 59.72,
+     "speaker": "instructor",
+     "text": "Remove and turn on the other side to close it",
+     "intent": "I3",
+     "category": "Instruction",
+     "attributes": {
+      "content_target": "action_method"
+     }
+    },
+    {
+     "uid": 25437,
+     "t0": 61.2,
+     "t1": 62.5,
+     "speaker": "instructor",
+     "text": "And now turn on the GoPro.",
+     "intent": "I3",
+     "category": "Instruction",
+     "attributes": {
+      "content_target": "sequence_step"
+     }
+    },
+    {
+     "uid": 25438,
+     "t0": 62.1,
+     "t1": 62.4,
+     "speaker": "user",
+     "text": "Mmm?",
+     "intent": "U3",
+     "category": "Clarification Request",
+     "attributes": {
+      "repair_target": "hearing_wording"
+     }
+    },
+    {
+     "uid": 25439,
+     "t0": 63.298,
+     "t1": 64.864,
+     "speaker": "instructor",
+     "text": "Ah, turn it on.",
+     "intent": "I1",
+     "category": "Answer",
+     "attributes": {
+      "content_target": "sequence_step"
+     }
+    },
+    {
+     "uid": 25440,
+     "t0": 65.1,
+     "t1": 65.6,
+     "speaker": "instructor",
+     "text": "Yeah.",
+     "intent": "I2",
+     "category": "Approval",
+     "attributes": {
+      "content_target": "action_method"
+     }
+    },
+    {
+     "uid": 25441,
+     "t0": 69.421,
+     "t1": 72.0,
+     "speaker": "instructor",
+     "text": "And now, turn off the button.",
+     "intent": "I3",
+     "category": "Instruction",
+     "attributes": {
+      "content_target": "sequence_step"
+     }
+    }
+   ],
+   "actions": [
+    {
+     "aid": 5855,
+     "kind": "action",
+     "t0": 55.028,
+     "t1": 58.009,
+     "description": "withdraw battery",
+     "validity": "VALID",
+     "task_effects": [
+      "PROGRESS"
+     ],
+     "state_label": null,
+     "verb": "withdraw"
+    },
+    {
+     "aid": 5856,
+     "kind": "action",
+     "t0": 58.122,
+     "t1": 58.732,
+     "description": "insert battery",
+     "validity": "VALID",
+     "task_effects": [
+      "PROGRESS"
+     ],
+     "state_label": null,
+     "verb": "insert"
+    },
+    {
+     "aid": 5857,
+     "kind": "action",
+     "t0": 59.064,
+     "t1": 59.8,
+     "description": "close gopro",
+     "validity": "VALID",
+     "task_effects": [
+      "COMPLETION"
+     ],
+     "state_label": null,
+     "verb": "close"
+    },
+    {
+     "aid": 5858,
+     "kind": "action",
+     "t0": 64.3,
+     "t1": 66.3,
+     "description": "push gopro",
+     "validity": "VALID",
+     "task_effects": [
+      "PROGRESS"
+     ],
+     "state_label": null,
+     "verb": "push"
+    },
+    {
+     "aid": 5859,
+     "kind": "action",
+     "t0": 70.1,
+     "t1": 72.3,
+     "description": "push gopro",
+     "validity": "VALID",
+     "task_effects": [
+      "PROGRESS"
+     ],
+     "state_label": null,
+     "verb": "push"
+    }
+   ],
+   "interventions": [
+    {
+     "rid": "R078-21July-GoPro_R0014",
+     "uid": 25436,
+     "side": "proactive",
+     "source": "USER_ACTION_STATE",
+     "types": [
+      "PROGRESS_OK"
+     ],
+     "type": "PROGRESS_OK",
+     "policy": "NECESSARY",
+     "wait": "censored",
+     "anchors": {
+      "es": 56.4,
+      "eo": 56.4,
+      "lu": 57.95
+     },
+     "events": [
+      {
+       "id": "a:5855",
+       "kind": "action",
+       "aid": 5855,
+       "t0": 55.028,
+       "t1": 58.009,
+       "text": "withdraw battery",
+       "validity": "VALID",
+       "state_label": null,
+       "task_effects": [
+        "PROGRESS"
+       ],
+       "note": null
+      }
+     ],
+     "target": {
+      "t0": 56.4,
+      "t1": 59.72,
+      "text": "Remove and turn on the other side to close it",
+      "intent": "I3",
+      "category": "Instruction",
+      "attributes": {
+       "content_target": "action_method"
+      },
+      "speaker": "instructor"
+     },
+     "focal": false
+    },
+    {
+     "rid": "R078-21July-GoPro_R0015",
+     "uid": 25437,
+     "side": "proactive",
+     "source": "USER_ACTION_STATE",
+     "types": [
+      "STEP_DONE"
+     ],
+     "type": "STEP_DONE",
+     "policy": "NECESSARY",
+     "wait": "censored",
+     "anchors": {
+      "es": 60.03,
+      "eo": 60.03,
+      "lu": 63.02
+     },
+     "events": [
+      {
+       "id": "a:5857",
+       "kind": "action",
+       "aid": 5857,
+       "t0": 59.064,
+       "t1": 59.8,
+       "text": "close gopro",
+       "validity": "VALID",
+       "state_label": null,
+       "task_effects": [
+        "COMPLETION"
+       ],
+       "note": null
+      }
+     ],
+     "target": {
+      "t0": 61.2,
+      "t1": 62.5,
+      "text": "And now turn on the GoPro.",
+      "intent": "I3",
+      "category": "Instruction",
+      "attributes": {
+       "content_target": "sequence_step"
+      },
+      "speaker": "instructor"
+     },
+     "focal": true
+    },
+    {
+     "rid": "R078-21July-GoPro_R0016",
+     "uid": 25439,
+     "side": "proactive",
+     "source": "USER_ACTION_STATE",
+     "types": [
+      "STEP_DONE"
+     ],
+     "type": "STEP_DONE",
+     "policy": "NECESSARY",
+     "wait": "1",
+     "anchors": {
+      "es": 60.65,
+      "eo": 60.65,
+      "lu": 64.04
+     },
+     "events": [
+      {
+       "id": "a:5857",
+       "kind": "action",
+       "aid": 5857,
+       "t0": 59.064,
+       "t1": 59.8,
+       "text": "close gopro",
+       "validity": "VALID",
+       "state_label": null,
+       "task_effects": [
+        "COMPLETION"
+       ],
+       "note": null
+      }
+     ],
+     "target": {
+      "t0": 63.298,
+      "t1": 64.864,
+      "text": "Ah, turn it on.",
+      "intent": "I1",
+      "category": "Answer",
+      "attributes": {
+       "content_target": "sequence_step"
+      },
+      "speaker": "instructor"
+     },
+     "focal": false
+    },
+    {
+     "rid": "R078-21July-GoPro_R0017",
+     "uid": 25440,
+     "side": "proactive",
+     "source": "USER_ACTION_STATE",
+     "types": [
+      "PROGRESS_OK"
+     ],
+     "type": "PROGRESS_OK",
+     "policy": "OPTIONAL",
+     "wait": "censored",
+     "anchors": {
+      "es": 65.1,
+      "eo": 65.1,
+      "lu": 66.25
+     },
+     "events": [
+      {
+       "id": "a:5858",
+       "kind": "action",
+       "aid": 5858,
+       "t0": 64.3,
+       "t1": 66.3,
+       "text": "push gopro",
+       "validity": "VALID",
+       "state_label": null,
+       "task_effects": [
+        "PROGRESS"
+       ],
+       "note": null
+      }
+     ],
+     "target": {
+      "t0": 65.1,
+      "t1": 65.6,
+      "text": "Yeah.",
+      "intent": "I2",
+      "category": "Approval",
+      "attributes": {
+       "content_target": "action_method"
+      },
+      "speaker": "instructor"
+     },
+     "focal": false
+    },
+    {
+     "rid": "R078-21July-GoPro_R0018",
+     "uid": 25441,
+     "side": "proactive",
+     "source": "USER_ACTION_STATE",
+     "types": [
+      "PROGRESS_OK"
+     ],
+     "type": "PROGRESS_OK",
+     "policy": "NECESSARY",
+     "wait": "1",
+     "anchors": {
+      "es": 67.09,
+      "eo": 68.11,
+      "lu": 72.28
+     },
+     "events": [
+      {
+       "id": "a:5858",
+       "kind": "action",
+       "aid": 5858,
+       "t0": 64.3,
+       "t1": 66.3,
+       "text": "push gopro",
+       "validity": "VALID",
+       "state_label": null,
+       "task_effects": [
+        "PROGRESS"
+       ],
+       "note": null
+      }
+     ],
+     "target": {
+      "t0": 69.421,
+      "t1": 72.0,
+      "text": "And now, turn off the button.",
+      "intent": "I3",
+      "category": "Instruction",
+      "attributes": {
+       "content_target": "sequence_step"
+      },
+      "speaker": "instructor"
+     },
+     "focal": false
+    }
+   ],
+   "keyframes": {
+    "es": {
+     "t": 60.03,
+     "file": "media/showcase/holo_r078_stepdone_es.jpg"
+    },
+    "eo": {
+     "t": 60.03,
+     "file": "media/showcase/holo_r078_stepdone_eo.jpg"
+    },
+    "lu": {
+     "t": 63.02,
+     "file": "media/showcase/holo_r078_stepdone_lu.jpg"
+    },
+    "target": {
+     "t": 61.2,
+     "file": "media/showcase/holo_r078_stepdone_target.jpg"
+    }
+   }
+  },
+  {
+   "id": "wtag_t5_silence",
+   "group": "silence",
+   "decision": null,
+   "dataset": "wtag",
+   "task": "coffee",
+   "session": "T5",
+   "session_duration_s": 478.92,
+   "range": [
+    33.2,
+    45.2
+   ],
+   "clip": "media/showcase/wtag_t5_silence.mp4",
+   "poster": "media/showcase/wtag_t5_silence.jpg",
+   "captions": "media/showcase/wtag_t5_silence.vtt",
+   "has_audio": true,
+   "focus": [
+    38.03,
+    43.9
+   ],
+   "title": "An acknowledgment needs no reply",
+   "takeaway": "The user is corrected (twelve ounces, not ten) and repeats it back: \u201coh twelve ounces. ok\u201d. No intervention is annotated after that: the acknowledgment closes the exchange and the user proceeds correctly.",
+   "note": null,
+   "focal_rid": null,
+   "moment_captions": null,
+   "dims": null,
+   "steps": [
+    {
+     "name": "Boil water",
+     "kind": "step",
+     "t0": 24.336,
+     "t1": 59.031
+    }
+   ],
+   "utterances": [
+    {
+     "uid": 24650,
+     "t0": 33.61,
+     "t1": 36.87,
+     "speaker": "user",
+     "text": "I wanna make sure I'm pouring ten ounces",
+     "intent": "U6",
+     "category": "Task Narration",
+     "attributes": {
+      "narration_type": "reasoning_need"
+     }
+    },
+    {
+     "uid": 24651,
+     "t0": 36.27,
+     "t1": 38.03,
+     "speaker": "instructor",
+     "text": "it should be twelve ounces of water",
+     "intent": "I9",
+     "category": "Correction",
+     "attributes": {
+      "content_target": "quantity_parameter"
+     }
+    },
+    {
+     "uid": 24652,
+     "t0": 38.03,
+     "t1": 40.4,
+     "speaker": "user",
+     "text": "oh twelve ounces. ok",
+     "intent": "U5",
+     "category": "Acknowledgment / Uptake",
+     "attributes": null
+    }
+   ],
+   "actions": [
+    {
+     "aid": 5077,
+     "kind": "action",
+     "t0": 25,
+     "t1": 40,
+     "description": "The user pours cold water from a jug into a measuring cup.",
+     "validity": "VALID",
+     "task_effects": [
+      "PROGRESS"
+     ],
+     "state_label": null,
+     "verb": "pour"
+    },
+    {
+     "aid": 5078,
+     "kind": "action",
+     "t0": 41.1,
+     "t1": 43.9,
+     "description": "The user closes the white kettle with its lid using both hands.",
+     "validity": "VALID",
+     "task_effects": [
+      "NO_PROGRESS"
+     ],
+     "state_label": null,
+     "verb": "close"
+    }
+   ],
+   "interventions": [
+    {
+     "rid": "T5_R0002",
+     "uid": 24651,
+     "side": "reactive",
+     "source": "USER_UTTERANCE",
+     "types": [
+      "USER_QUERY"
+     ],
+     "type": "USER_QUERY",
+     "policy": "NECESSARY",
+     "wait": null,
+     "anchors": {
+      "r": 36.87,
+      "lu": 38.03
+     },
+     "events": [
+      {
+       "id": "u:24650",
+       "kind": "utterance",
+       "speaker": "user",
+       "uid": 24650,
+       "t0": 33.61,
+       "t1": 36.87,
+       "text": "I wanna make sure I'm pouring ten ounces",
+       "intent": "U6"
+      }
+     ],
+     "target": {
+      "t0": 36.27,
+      "t1": 38.03,
+      "text": "it should be twelve ounces of water",
+      "intent": "I9",
+      "category": "Correction",
+      "attributes": {
+       "content_target": "quantity_parameter"
+      },
+      "speaker": "instructor"
+     },
+     "focal": false
+    }
+   ],
+   "keyframes": {}
+  },
+  {
+   "id": "wtag_t48_step_necessary",
+   "group": "decision",
+   "decision": "necessary",
+   "dataset": "wtag",
+   "task": "coffee",
+   "session": "T48",
+   "session_duration_s": 785.52,
+   "range": [
+    138.75,
+    153.0
+   ],
+   "clip": "media/showcase/wtag_t48_step_necessary.mp4",
+   "poster": "media/showcase/wtag_t48_step_necessary.jpg",
+   "captions": "media/showcase/wtag_t48_step_necessary.vtt",
+   "has_audio": true,
+   "focus": null,
+   "title": "The next step is unknown",
+   "takeaway": "The user has just asked where the dripper goes. Once it is on the mug, the step is complete but the user does not know what comes next, so the instruction that follows is necessary.",
+   "note": null,
+   "focal_rid": "T48_R0010",
+   "moment_captions": null,
+   "dims": null,
+   "steps": [
+    {
+     "name": "Assemble filter cone",
+     "kind": "step",
+     "t0": 115.288,
+     "t1": 190.01
+    }
+   ],
+   "utterances": [
+    {
+     "uid": 24334,
+     "t0": 138.75,
+     "t1": 139.63,
+     "speaker": "instructor",
+     "text": "the paper filter",
+     "intent": "I1",
+     "category": "Answer",
+     "attributes": {
+      "content_target": "object_tool"
+     }
+    },
+    {
+     "uid": 24335,
+     "t0": 139.63,
+     "t1": 140.83,
+     "speaker": "user",
+     "text": "this the paper filter cool",
+     "intent": "U5",
+     "category": "Acknowledgment / Uptake",
+     "attributes": null
+    },
+    {
+     "uid": 24336,
+     "t0": 140.83,
+     "t1": 141.96,
+     "speaker": "user",
+     "text": "this goes?",
+     "intent": "U1",
+     "category": "Information Request",
+     "attributes": {
+      "request_type": "task_guidance"
+     }
+    },
+    {
+     "uid": 24337,
+     "t0": 143.05,
+     "t1": 144.28,
+     "speaker": "instructor",
+     "text": "it goes on the mug",
+     "intent": "I1",
+     "category": "Answer",
+     "attributes": {
+      "content_target": "quantity_parameter"
+     }
+    },
+    {
+     "uid": 24338,
+     "t0": 145.07,
+     "t1": 146.69,
+     "speaker": "user",
+     "text": "oh so it's already there ok",
+     "intent": "U5",
+     "category": "Acknowledgment / Uptake",
+     "attributes": null
+    },
+    {
+     "uid": 24339,
+     "t0": 148.89,
+     "t1": 152.87,
+     "speaker": "instructor",
+     "text": "um and then you have to put the paper filter in the filter cone",
+     "intent": "I3",
+     "category": "Instruction",
+     "attributes": {
+      "content_target": "action_method"
+     }
+    }
+   ],
+   "actions": [
+    {
+     "aid": 4699,
+     "kind": "action",
+     "t0": 140.29,
+     "t1": 142.3,
+     "description": "The user lifts the metal dripper to inspect it.",
+     "validity": "VALID",
+     "task_effects": [
+      "NO_PROGRESS"
+     ],
+     "state_label": null,
+     "verb": "lift"
+    },
+    {
+     "aid": 4700,
+     "kind": "action",
+     "t0": 145.04,
+     "t1": 147.14,
+     "description": "The user places the metal dripper onto the blue mug.",
+     "validity": "VALID",
+     "task_effects": [
+      "COMPLETION"
+     ],
+     "state_label": null,
+     "verb": "place"
+    }
+   ],
+   "interventions": [
+    {
+     "rid": "T48_R0008",
+     "uid": 24334,
+     "side": "reactive",
+     "source": "USER_UTTERANCE",
+     "types": [
+      "USER_QUERY"
+     ],
+     "type": "USER_QUERY",
+     "policy": "NECESSARY",
+     "wait": null,
+     "anchors": {
+      "r": 138.75,
+      "lu": 139.63
+     },
+     "events": [
+      {
+       "id": "u:24333",
+       "kind": "utterance",
+       "speaker": "user",
+       "uid": 24333,
+       "t0": 136.94,
+       "t1": 138.75,
+       "text": "this oh what is this ok?",
+       "intent": "U1"
+      }
+     ],
+     "target": {
+      "t0": 138.75,
+      "t1": 139.63,
+      "text": "the paper filter",
+      "intent": "I1",
+      "category": "Answer",
+      "attributes": {
+       "content_target": "object_tool"
+      },
+      "speaker": "instructor"
+     },
+     "focal": false
+    },
+    {
+     "rid": "T48_R0009",
+     "uid": 24337,
+     "side": "reactive",
+     "source": "USER_UTTERANCE",
+     "types": [
+      "USER_QUERY"
+     ],
+     "type": "USER_QUERY",
+     "policy": "NECESSARY",
+     "wait": null,
+     "anchors": {
+      "r": 141.96,
+      "lu": 145
+     },
+     "events": [
+      {
+       "id": "u:24336",
+       "kind": "utterance",
+       "speaker": "user",
+       "uid": 24336,
+       "t0": 140.83,
+       "t1": 141.96,
+       "text": "this goes?",
+       "intent": "U1"
+      }
+     ],
+     "target": {
+      "t0": 143.05,
+      "t1": 144.28,
+      "text": "it goes on the mug",
+      "intent": "I1",
+      "category": "Answer",
+      "attributes": {
+       "content_target": "quantity_parameter"
+      },
+      "speaker": "instructor"
+     },
+     "focal": false
+    },
+    {
+     "rid": "T48_R0010",
+     "uid": 24339,
+     "side": "proactive",
+     "source": "USER_ACTION_STATE",
+     "types": [
+      "STEP_DONE"
+     ],
+     "type": "STEP_DONE",
+     "policy": "NECESSARY",
+     "wait": "censored",
+     "anchors": {
+      "es": 144.3,
+      "eo": 146.65,
+      "lu": 153
+     },
+     "events": [
+      {
+       "id": "a:4700",
+       "kind": "action",
+       "aid": 4700,
+       "t0": 145.04,
+       "t1": 147.14,
+       "text": "The user places the metal dripper onto the blue mug.",
+       "validity": "VALID",
+       "state_label": null,
+       "task_effects": [
+        "COMPLETION"
+       ],
+       "note": null
+      }
+     ],
+     "target": {
+      "t0": 148.89,
+      "t1": 152.87,
+      "text": "um and then you have to put the paper filter in the filter cone",
+      "intent": "I3",
+      "category": "Instruction",
+      "attributes": {
+       "content_target": "action_method"
+      },
+      "speaker": "instructor"
+     },
+     "focal": true
+    }
+   ],
+   "keyframes": {
+    "es": {
+     "t": 144.3,
+     "file": "media/showcase/wtag_t48_step_necessary_es.jpg"
+    },
+    "eo": {
+     "t": 146.65,
+     "file": "media/showcase/wtag_t48_step_necessary_eo.jpg"
+    },
+    "lu": {
+     "t": 153,
+     "file": "media/showcase/wtag_t48_step_necessary_lu.jpg"
+    },
+    "target": {
+     "t": 148.89,
+     "file": "media/showcase/wtag_t48_step_necessary_target.jpg"
+    }
+   }
+  },
+  {
+   "id": "wtag_t8_step_optional",
+   "group": "decision",
+   "decision": "optional",
+   "dataset": "wtag",
+   "task": "coffee",
+   "session": "T8",
+   "session_duration_s": 574.704,
+   "range": [
+    56.2,
+    75.08
+   ],
+   "clip": "media/showcase/wtag_t8_step_optional.mp4",
+   "poster": "media/showcase/wtag_t8_step_optional.jpg",
+   "captions": "media/showcase/wtag_t8_step_optional.vtt",
+   "has_audio": true,
+   "focus": null,
+   "title": "An approval of the placement",
+   "takeaway": "After a correction the user places the dripper on the mug and already reaches for the filter. \u201cYeah, just placing, yes, like that\u201d confirms it, but staying silent would have been fine too.",
+   "note": null,
+   "focal_rid": "T8_R0004",
+   "moment_captions": null,
+   "dims": null,
+   "steps": [
+    {
+     "name": "Assemble filter cone",
+     "kind": "step",
+     "t0": 52.857,
+     "t1": 74.981
+    }
+   ],
+   "utterances": [
+    {
+     "uid": 25123,
+     "t0": 60.24,
+     "t1": 64.8,
+     "speaker": "instructor",
+     "text": "uh you should assemble the filter cone first by placing the dripper on top of the coffee mug",
+     "intent": "I9",
+     "category": "Correction",
+     "attributes": {
+      "content_target": "sequence_step"
+     }
+    },
+    {
+     "uid": 25124,
+     "t0": 72.44,
+     "t1": 74.95,
+     "speaker": "instructor",
+     "text": "yeah just placing yes like that",
+     "intent": "I2",
+     "category": "Approval",
+     "attributes": {
+      "content_target": "action_method"
+     }
+    }
+   ],
+   "actions": [
+    {
+     "aid": 2776,
+     "kind": "action",
+     "t0": 56.2,
+     "t1": 61.2,
+     "description": "The person removes a paper filter from its packaging.",
+     "validity": "VALID",
+     "task_effects": [
+      "DEVIATION_ONSET"
+     ],
+     "state_label": null,
+     "verb": "remove"
+    },
+    {
+     "aid": 2777,
+     "kind": "action",
+     "t0": 68.8,
+     "t1": 74.2,
+     "description": "The right hand places the metal dripper on top of the blue mug.",
+     "validity": "VALID",
+     "task_effects": [
+      "COMPLETION",
+      "RECOVERY"
+     ],
+     "state_label": null,
+     "verb": "place"
+    }
+   ],
+   "interventions": [
+    {
+     "rid": "T8_R0003",
+     "uid": 25123,
+     "side": "proactive",
+     "source": "USER_ACTION_STATE",
+     "types": [
+      "ERROR"
+     ],
+     "type": "ERROR",
+     "policy": "NECESSARY",
+     "wait": "censored",
+     "anchors": {
+      "es": 56.2,
+      "eo": 60.05,
+      "lu": 68.35
+     },
+     "events": [
+      {
+       "id": "a:2776",
+       "kind": "action",
+       "aid": 2776,
+       "t0": 56.2,
+       "t1": 61.2,
+       "text": "The person removes a paper filter from its packaging.",
+       "validity": "VALID",
+       "state_label": null,
+       "task_effects": [
+        "DEVIATION_ONSET"
+       ],
+       "note": null
+      }
+     ],
+     "target": {
+      "t0": 60.24,
+      "t1": 64.8,
+      "text": "uh you should assemble the filter cone first by placing the dripper on top of the coffee mug",
+      "intent": "I9",
+      "category": "Correction",
+      "attributes": {
+       "content_target": "sequence_step"
+      },
+      "speaker": "instructor"
+     },
+     "focal": false
+    },
+    {
+     "rid": "T8_R0004",
+     "uid": 25124,
+     "side": "proactive",
+     "source": "USER_ACTION_STATE",
+     "types": [
+      "STEP_DONE"
+     ],
+     "type": "STEP_DONE",
+     "policy": "OPTIONAL",
+     "wait": "censored",
+     "anchors": {
+      "es": 68.8,
+      "eo": 71.87,
+      "lu": 75.08
+     },
+     "events": [
+      {
+       "id": "a:2777",
+       "kind": "action",
+       "aid": 2777,
+       "t0": 68.8,
+       "t1": 74.2,
+       "text": "The right hand places the metal dripper on top of the blue mug.",
+       "validity": "VALID",
+       "state_label": null,
+       "task_effects": [
+        "COMPLETION",
+        "RECOVERY"
+       ],
+       "note": null
+      }
+     ],
+     "target": {
+      "t0": 72.44,
+      "t1": 74.95,
+      "text": "yeah just placing yes like that",
+      "intent": "I2",
+      "category": "Approval",
+      "attributes": {
+       "content_target": "action_method"
+      },
+      "speaker": "instructor"
+     },
+     "focal": true
+    }
+   ],
+   "keyframes": {
+    "es": {
+     "t": 68.8,
+     "file": "media/showcase/wtag_t8_step_optional_es.jpg"
+    },
+    "eo": {
+     "t": 71.87,
+     "file": "media/showcase/wtag_t8_step_optional_eo.jpg"
+    },
+    "lu": {
+     "t": 75.08,
+     "file": "media/showcase/wtag_t8_step_optional_lu.jpg"
+    },
+    "target": {
+     "t": 72.44,
+     "file": "media/showcase/wtag_t8_step_optional_target.jpg"
+    }
+   }
+  },
+  {
+   "id": "wtag_t11_step_none",
+   "group": "decision",
+   "decision": "none",
+   "dataset": "wtag",
+   "task": "coffee",
+   "session": "T11",
+   "session_duration_s": 652.212,
+   "range": [
+    145.0,
+    159.0
+   ],
+   "clip": "media/showcase/wtag_t11_step_none.mp4",
+   "poster": "media/showcase/wtag_t11_step_none.jpg",
+   "captions": "media/showcase/wtag_t11_step_none.vtt",
+   "has_audio": true,
+   "focus": [
+    148.87,
+    157.2
+   ],
+   "title": "No intervention: the user proceeds",
+   "takeaway": "The user reads the recipe, puts the dripper on the mug and reaches for a filter. Nothing is said and nothing is annotated: in WTaG, where users work from a recipe at their own pace, most step completions pass like this.",
+   "note": null,
+   "focal_rid": null,
+   "moment_captions": null,
+   "dims": null,
+   "steps": [
+    {
+     "name": "Assemble filter cone",
+     "kind": "step",
+     "t0": 140.12,
+     "t1": 198.436
+    }
+   ],
+   "utterances": [],
+   "actions": [
+    {
+     "aid": 2992,
+     "kind": "state_event",
+     "t0": 134.39,
+     "t1": 148.85,
+     "description": "The user is standing still, looking at the recipe sheet without performing any task actions.",
+     "validity": null,
+     "task_effects": null,
+     "state_label": "STALL",
+     "verb": null
+    },
+    {
+     "aid": 2951,
+     "kind": "action",
+     "t0": 148.87,
+     "t1": 155.05,
+     "description": "The person places the metal pour-over dripper onto the blue mug.",
+     "validity": "VALID",
+     "task_effects": [
+      "COMPLETION"
+     ],
+     "state_label": null,
+     "verb": "place"
+    },
+    {
+     "aid": 2952,
+     "kind": "action",
+     "t0": 157.2,
+     "t1": 163.2,
+     "description": "The person uses both hands to open the plastic bag containing the coffee filters.",
+     "validity": "VALID",
+     "task_effects": [
+      "PROGRESS"
+     ],
+     "state_label": null,
+     "verb": "open"
+    }
+   ],
+   "interventions": [],
+   "keyframes": {}
+  }
+ ]
+}

@@ -1,0 +1,255 @@
+{
+ "generated_utc": "2026-10-25T17:10:41+00:00",
+ "source": "EgoGuide_Bench test split: WTaG layers frozen 2026-09-22 (bench digest 13349303bc6da65c), HoloAssist layers of the 2026-09-19 layout (machine-merged, audited)",
+ "split": "test",
+ "type_priority": [
+  "ERROR",
+  "VISIBILITY",
+  "UNCLEAR_STATE",
+  "STUCK",
+  "STEP_DONE",
+  "RECOVERY",
+  "PROGRESS_OK",
+  "USER_QUERY",
+  "USER_REPORT",
+  "DIALOG_OTHER",
+  "SELF",
+  "NONE"
+ ],
+ "definitions": {
+  "reactive": "trigger source USER_UTTERANCE or MIXED",
+  "proactive": "trigger source USER_ACTION_STATE",
+  "scored": "NECESSARY or OPTIONAL rows with a reactive or proactive source (user speech, action or state); the denominator of the trigger-type chart. Rows whose source is NONE_FOUND or INSTRUCTOR_SELF carry no user evidence and are left out",
+  "primary_type": "first entry of type_priority present in the row; multi-type rows are counted once",
+  "step_completion": "action blocks with task effect COMPLETION; decision = highest policy of the trigger rows linked to the block, or none",
+  "necessary_windowed": "NECESSARY rows with an instructor target, their anchor (t_usr or t_evid) and t_latest: the rows Timely Correctness scores"
+ },
+ "datasets": {
+  "wtag": {
+   "sessions": 43,
+   "duration_s": 27407.055000000004,
+   "utterances": {
+    "user": 2324,
+    "instructor": 1482
+   },
+   "trigger_rows": 1484,
+   "policy": {
+    "NECESSARY": 1065,
+    "OPTIONAL": 335,
+    "EXCLUDED": 84
+   },
+   "source": {
+    "USER_UTTERANCE": 788,
+    "USER_ACTION_STATE": 529,
+    "NONE_FOUND": 71,
+    "MIXED": 92,
+    "INSTRUCTOR_SELF": 4
+   },
+   "multi_type_rows": 119,
+   "by_type": {
+    "USER_QUERY": {
+     "NECESSARY": 510,
+     "OPTIONAL": 20
+    },
+    "UNCLEAR_STATE": {
+     "OPTIONAL": 16,
+     "NECESSARY": 14
+    },
+    "ERROR": {
+     "NECESSARY": 241,
+     "OPTIONAL": 7
+    },
+    "RECOVERY": {
+     "NECESSARY": 20,
+     "OPTIONAL": 16
+    },
+    "USER_REPORT": {
+     "OPTIONAL": 88,
+     "NECESSARY": 34
+    },
+    "STEP_DONE": {
+     "NECESSARY": 71,
+     "OPTIONAL": 60
+    },
+    "PROGRESS_OK": {
+     "NECESSARY": 108,
+     "OPTIONAL": 66
+    },
+    "DIALOG_OTHER": {
+     "OPTIONAL": 21,
+     "NECESSARY": 1
+    },
+    "STUCK": {
+     "OPTIONAL": 11,
+     "NECESSARY": 29
+    },
+    "VISIBILITY": {
+     "NECESSARY": 24,
+     "OPTIONAL": 7
+    },
+    "SELF": {
+     "OPTIONAL": 1,
+     "NECESSARY": 2
+    }
+   },
+   "necessary_by_side": {
+    "reactive": 698,
+    "proactive": 356,
+    "other": 11
+   },
+   "scored_by_side": {
+    "reactive": 849,
+    "proactive": 518
+   },
+   "necessary_windowed_by_side": {
+    "reactive": 698,
+    "proactive": 356
+   },
+   "actions": {
+    "state_event": 310,
+    "action": 2056
+   },
+   "step_completion": {
+    "n": 418,
+    "none": 291,
+    "optional": 73,
+    "necessary": 54
+   },
+   "tasks": {
+    "coffee": 14,
+    "mugcake": 15,
+    "pinwheel": 14
+   },
+   "scored": 1367
+  },
+  "holoassist": {
+   "sessions": 72,
+   "duration_s": 22650.88,
+   "utterances": {
+    "user": 1358,
+    "instructor": 2736
+   },
+   "trigger_rows": 2736,
+   "policy": {
+    "EXCLUDED": 259,
+    "OPTIONAL": 989,
+    "NECESSARY": 1482,
+    "UNCLEAR": 6
+   },
+   "source": {
+    "NONE_FOUND": 147,
+    "USER_ACTION_STATE": 1908,
+    "USER_UTTERANCE": 466,
+    "INSTRUCTOR_SELF": 88,
+    "MIXED": 127
+   },
+   "multi_type_rows": 127,
+   "by_type": {
+    "VISIBILITY": {
+     "OPTIONAL": 19,
+     "NECESSARY": 25
+    },
+    "PROGRESS_OK": {
+     "NECESSARY": 357,
+     "OPTIONAL": 537
+    },
+    "STEP_DONE": {
+     "OPTIONAL": 280,
+     "NECESSARY": 494
+    },
+    "USER_QUERY": {
+     "NECESSARY": 306,
+     "OPTIONAL": 7
+    },
+    "ERROR": {
+     "NECESSARY": 210,
+     "OPTIONAL": 11
+    },
+    "DIALOG_OTHER": {
+     "OPTIONAL": 64,
+     "NECESSARY": 8
+    },
+    "USER_REPORT": {
+     "NECESSARY": 27,
+     "OPTIONAL": 41
+    },
+    "STUCK": {
+     "NECESSARY": 16,
+     "OPTIONAL": 2
+    },
+    "RECOVERY": {
+     "OPTIONAL": 25,
+     "NECESSARY": 33
+    },
+    "UNCLEAR_STATE": {
+     "OPTIONAL": 2,
+     "NECESSARY": 5
+    }
+   },
+   "necessary_by_side": {
+    "proactive": 1016,
+    "reactive": 465,
+    "other": 1
+   },
+   "scored_by_side": {
+    "proactive": 1889,
+    "reactive": 580
+   },
+   "necessary_windowed_by_side": {
+    "proactive": 1016,
+    "reactive": 465
+   },
+   "actions": {
+    "state_event": 231,
+    "action": 5290
+   },
+   "step_completion": {
+    "n": 649,
+    "optional": 79,
+    "none": 136,
+    "necessary": 428,
+    "excluded_only": 6
+   },
+   "tasks": {
+    "setup gopro": 8,
+    "assemble laser scanner": 7,
+    "change circuit breaker": 4,
+    "setup small printer": 6,
+    "make coffee with espresso machine": 1,
+    "setup switch": 5,
+    "fix motorcycle": 7,
+    "assemble computer": 24,
+    "change belt": 1,
+    "assemble nightstand": 3,
+    "setup camera": 3,
+    "assemble stool": 1,
+    "assemble tray table": 1,
+    "assemble utility cart": 1
+   },
+   "scored": 2469
+  }
+ },
+ "paper": {
+  "video_hours": {
+   "wtag": 7.57,
+   "holoassist": 6.29
+  },
+  "reactive_share_of_necessary_pct": {
+   "wtag": 66.1,
+   "holoassist": 31.4
+  },
+  "step_completion_pct": {
+   "wtag": [
+    12.9,
+    17.5,
+    69.6
+   ],
+   "holoassist": [
+    65.9,
+    12.2,
+    21.9
+   ]
+  },
+  "note": "Table 3 and Section 3.4 / Appendix A of the paper; the HoloAssist no-intervention share counts completions whose only linked turn is excluded."
+ }
+}

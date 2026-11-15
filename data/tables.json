@@ -1,0 +1,711 @@
+{
+ "generated_from": "results/final/tables.json (judge prompts d176420cd526 / eda55d499bc3 / ef1081084233)",
+ "metrics": [
+  {
+   "id": "hard_f1",
+   "label": "Similarity F1",
+   "dir": "up",
+   "group": "Reference Fidelity",
+   "fmt": 3
+  },
+  {
+   "id": "judged_f1",
+   "label": "LLM-Judged F1",
+   "dir": "up",
+   "group": "Reference Fidelity",
+   "fmt": 3
+  },
+  {
+   "id": "tc_reactive",
+   "label": "Timely Correctness",
+   "dir": "up",
+   "group": "Reactive Guidance",
+   "fmt": 3
+  },
+  {
+   "id": "reactive_latency",
+   "label": "Response Latency (s)",
+   "dir": "down",
+   "group": "Reactive Guidance",
+   "fmt": 2
+  },
+  {
+   "id": "tc_proactive",
+   "label": "Timely Correctness",
+   "dir": "up",
+   "group": "Proactive Guidance",
+   "fmt": 3
+  },
+  {
+   "id": "ip",
+   "label": "Intervention Precision",
+   "dir": "up",
+   "group": "Intervention Precision and Turn-Taking",
+   "fmt": 3
+  },
+  {
+   "id": "overlap_duration_ratio",
+   "label": "Speech Overlap Ratio",
+   "dir": "down",
+   "group": "Intervention Precision and Turn-Taking",
+   "fmt": 3
+  }
+ ],
+ "table1": {
+  "WTaG": [
+   {
+    "system": "ProAssist",
+    "cells": {
+     "hard_f1": {
+      "point": 0.10062026188835285,
+      "half": 0.018000000000000002
+     },
+     "judged_f1": {
+      "point": 0.12655065472088217,
+      "half": 0.018849999999999992
+     },
+     "tc_reactive": {
+      "point": 0.08789343417638104,
+      "half": 0.0172
+     },
+     "reactive_latency": {
+      "point": 2,
+      "half": 0.2047500000000001
+     },
+     "tc_proactive": {
+      "point": 0.04620476939423573,
+      "half": 0.0221
+     },
+     "ip": {
+      "point": 0.08838028169014084,
+      "half": 0.016149999999999998
+     },
+     "overlap_duration_ratio": {
+      "point": 0.21332274080365682,
+      "half": 0.037000000000000005
+     }
+    }
+   },
+   {
+    "system": "VideoLLM-online",
+    "cells": {
+     "hard_f1": {
+      "point": 0.0909090909090909,
+      "half": 0.016
+     },
+     "judged_f1": {
+      "point": 0.13758845944474687,
+      "half": 0.018749999999999996
+     },
+     "tc_reactive": {
+      "point": 0.09546354694877739,
+      "half": 0.02465
+     },
+     "reactive_latency": {
+      "point": 1.696,
+      "half": 0.126
+     },
+     "tc_proactive": {
+      "point": 0.01528112514803949,
+      "half": 0.0123
+     },
+     "ip": {
+      "point": 0.05862226277372263,
+      "half": 0.011699999999999999
+     },
+     "overlap_duration_ratio": {
+      "point": 0.44180494562173944,
+      "half": 0.04645000000000002
+     }
+    }
+   },
+   {
+    "system": "JoyAI",
+    "cells": {
+     "hard_f1": {
+      "point": 0.09923290354170065,
+      "half": 0.01405
+     },
+     "judged_f1": {
+      "point": 0.13848539252488984,
+      "half": 0.020349999999999993
+     },
+     "tc_reactive": {
+      "point": 0.10664352935738435,
+      "half": 0.01965
+     },
+     "reactive_latency": {
+      "point": 1.52,
+      "half": 0.10799999999999998
+     },
+     "tc_proactive": {
+      "point": 0.022825120021232652,
+      "half": 0.011699999999999999
+     },
+     "ip": {
+      "point": 0.08018867924528301,
+      "half": 0.013999999999999999
+     },
+     "overlap_duration_ratio": {
+      "point": 0.22350630594905405,
+      "half": 0.025399999999999992
+     }
+    }
+   },
+   {
+    "system": "Gemini",
+    "cells": {
+     "hard_f1": {
+      "point": 0.1163979551710578,
+      "half": 0.02135
+     },
+     "judged_f1": {
+      "point": 0.12701533621706648,
+      "half": 0.018800000000000004
+     },
+     "tc_reactive": {
+      "point": 0.12619772241045904,
+      "half": 0.027649999999999994
+     },
+     "reactive_latency": {
+      "point": 2.163,
+      "half": 0.10224999999999995
+     },
+     "tc_proactive": {
+      "point": 0.06333914849912473,
+      "half": 0.025800000000000003
+     },
+     "ip": {
+      "point": 0.14514608859566447,
+      "half": 0.022849999999999995
+     },
+     "overlap_duration_ratio": {
+      "point": 0.05933272421822042,
+      "half": 0.007599999999999999
+     }
+    }
+   },
+   {
+    "system": "FLUID",
+    "cells": {
+     "hard_f1": {
+      "point": 0.14593140551445863,
+      "half": 0.021349999999999994
+     },
+     "judged_f1": {
+      "point": 0.22520174848688637,
+      "half": 0.02155
+     },
+     "tc_reactive": {
+      "point": 0.2093130635347764,
+      "half": 0.030399999999999996
+     },
+     "reactive_latency": {
+      "point": 1.151,
+      "half": 0.04325000000000001
+     },
+     "tc_proactive": {
+      "point": 0.04604708196964479,
+      "half": 0.014549999999999997
+     },
+     "ip": {
+      "point": 0.1635135135135135,
+      "half": 0.022449999999999998
+     },
+     "overlap_duration_ratio": {
+      "point": 0.2068940755963657,
+      "half": 0.013649999999999995
+     }
+    }
+   }
+  ],
+  "HoloAssist": [
+   {
+    "system": "ProAssist",
+    "cells": {
+     "hard_f1": {
+      "point": 0.044582685329186106,
+      "half": 0.0097
+     },
+     "judged_f1": {
+      "point": 0.05106272680145153,
+      "half": 0.01005
+     },
+     "tc_reactive": {
+      "point": 0.019556675577189566,
+      "half": 0.012650000000000002
+     },
+     "reactive_latency": {
+      "point": 1.3465,
+      "half": 0.403
+     },
+     "tc_proactive": {
+      "point": 0.02517004429608291,
+      "half": 0.008950000000000001
+     },
+     "ip": {
+      "point": 0.05213903743315508,
+      "half": 0.012950000000000003
+     },
+     "overlap_duration_ratio": {
+      "point": 0.20612473688434826,
+      "half": 0.0315
+     }
+    }
+   },
+   {
+    "system": "VideoLLM-online",
+    "cells": {
+     "hard_f1": {
+      "point": 0.04813829787234043,
+      "half": 0.012299999999999998
+     },
+     "judged_f1": {
+      "point": 0.07513297872340427,
+      "half": 0.015499999999999996
+     },
+     "tc_reactive": {
+      "point": 0.029264142145827603,
+      "half": 0.01295
+     },
+     "reactive_latency": {
+      "point": 1.44,
+      "half": 0.18699999999999994
+     },
+     "tc_proactive": {
+      "point": 0.017735136834930765,
+      "half": 0.008
+     },
+     "ip": {
+      "point": 0.07275390625,
+      "half": 0.01775
+     },
+     "overlap_duration_ratio": {
+      "point": 0.21812798877373227,
+      "half": 0.0387
+     }
+    }
+   },
+   {
+    "system": "JoyAI",
+    "cells": {
+     "hard_f1": {
+      "point": 0.07615921214608125,
+      "half": 0.011550000000000005
+     },
+     "judged_f1": {
+      "point": 0.09831760361099713,
+      "half": 0.014949999999999998
+     },
+     "tc_reactive": {
+      "point": 0.0484920372696204,
+      "half": 0.01735
+     },
+     "reactive_latency": {
+      "point": 1.657,
+      "half": 0.37849999999999995
+     },
+     "tc_proactive": {
+      "point": 0.02928592186269227,
+      "half": 0.008900000000000002
+     },
+     "ip": {
+      "point": 0.04986682450429121,
+      "half": 0.008199999999999999
+     },
+     "overlap_duration_ratio": {
+      "point": 0.47979245903421996,
+      "half": 0.07069999999999999
+     }
+    }
+   },
+   {
+    "system": "Gemini",
+    "cells": {
+     "hard_f1": {
+      "point": 0.02842377260981912,
+      "half": 0.008450000000000001
+     },
+     "judged_f1": {
+      "point": 0.037306201550387594,
+      "half": 0.013400000000000002
+     },
+     "tc_reactive": {
+      "point": 0.01624441140130511,
+      "half": 0.012199999999999999
+     },
+     "reactive_latency": {
+      "point": 1.284,
+      "half": 1.43025
+     },
+     "tc_proactive": {
+      "point": 0.02017966457404123,
+      "half": 0.0085
+     },
+     "ip": {
+      "point": 0.12777777777777777,
+      "half": 0.04324999999999999
+     },
+     "overlap_duration_ratio": {
+      "point": 0.06315604149783684,
+      "half": 0.0157
+     }
+    }
+   },
+   {
+    "system": "FLUID",
+    "cells": {
+     "hard_f1": {
+      "point": 0.06257719226018937,
+      "half": 0.011550000000000001
+     },
+     "judged_f1": {
+      "point": 0.09866886235762316,
+      "half": 0.014799999999999994
+     },
+     "tc_reactive": {
+      "point": 0.05479975140644061,
+      "half": 0.019850000000000003
+     },
+     "reactive_latency": {
+      "point": 1.172,
+      "half": 0.13075000000000003
+     },
+     "tc_proactive": {
+      "point": 0.0618056144231561,
+      "half": 0.012650000000000002
+     },
+     "ip": {
+      "point": 0.16648230088495575,
+      "half": 0.023999999999999994
+     },
+     "overlap_duration_ratio": {
+      "point": 0.15274481730129433,
+      "half": 0.026749999999999996
+     }
+    }
+   }
+  ]
+ },
+ "ladder": [
+  {
+   "system": "JoyAI",
+   "levels": [
+    {
+     "level": "L0",
+     "cells": {
+      "judged_f1": {
+       "point": 0.13848539252488984,
+       "half": 0.020349999999999993
+      },
+      "tc_reactive": {
+       "point": 0.10664352935738435,
+       "half": 0.01965
+      },
+      "tc_proactive": {
+       "point": 0.022825120021232652,
+       "half": 0.011699999999999999
+      },
+      "ip": {
+       "point": 0.08018867924528301,
+       "half": 0.013999999999999999
+      }
+     }
+    },
+    {
+     "level": "L1",
+     "cells": {
+      "judged_f1": {
+       "point": 0.31373713380839274,
+       "half": 0.03369999999999998
+      },
+      "tc_reactive": {
+       "point": 0.37509573851703754,
+       "half": 0.03539999999999999
+      },
+      "tc_proactive": {
+       "point": 0.12744778228595008,
+       "half": 0.03305
+      },
+      "ip": {
+       "point": 0.34674329501915707,
+       "half": 0.03720000000000001
+      }
+     }
+    },
+    {
+     "level": "L2",
+     "cells": {
+      "judged_f1": {
+       "point": 0.3299009900990099,
+       "half": 0.03534999999999999
+      },
+      "tc_reactive": {
+       "point": 0.40909878786786796,
+       "half": 0.037250000000000005
+      },
+      "tc_proactive": {
+       "point": 0.119124796939212,
+       "half": 0.034249999999999996
+      },
+      "ip": {
+       "point": 0.37775647171620325,
+       "half": 0.04025000000000001
+      }
+     }
+    },
+    {
+     "level": "L3",
+     "cells": {
+      "judged_f1": {
+       "point": 0.34560570071258906,
+       "half": 0.038099999999999995
+      },
+      "tc_reactive": {
+       "point": 0.4105941664192254,
+       "half": 0.03685000000000002
+      },
+      "tc_proactive": {
+       "point": 0.17790640922950998,
+       "half": 0.03545000000000001
+      },
+      "ip": {
+       "point": 0.39846743295019155,
+       "half": 0.0373
+      }
+     }
+    }
+   ]
+  },
+  {
+   "system": "Gemini",
+   "levels": [
+    {
+     "level": "L0",
+     "cells": {
+      "judged_f1": {
+       "point": 0.12701533621706648,
+       "half": 0.018800000000000004
+      },
+      "tc_reactive": {
+       "point": 0.12619772241045904,
+       "half": 0.027649999999999994
+      },
+      "tc_proactive": {
+       "point": 0.06333914849912473,
+       "half": 0.025800000000000003
+      },
+      "ip": {
+       "point": 0.14514608859566447,
+       "half": 0.022849999999999995
+      }
+     }
+    },
+    {
+     "level": "L1",
+     "cells": {
+      "judged_f1": {
+       "point": 0.300939158840343,
+       "half": 0.02890000000000001
+      },
+      "tc_reactive": {
+       "point": 0.1760556791125391,
+       "half": 0.027400000000000008
+      },
+      "tc_proactive": {
+       "point": 0.2587531201240042,
+       "half": 0.04419999999999999
+      },
+      "ip": {
+       "point": 0.2905894519131334,
+       "half": 0.030850000000000016
+      }
+     }
+    },
+    {
+     "level": "L2",
+     "cells": {
+      "judged_f1": {
+       "point": 0.31283203923171227,
+       "half": 0.029700000000000004
+      },
+      "tc_reactive": {
+       "point": 0.19513938691355104,
+       "half": 0.02779999999999999
+      },
+      "tc_proactive": {
+       "point": 0.2734584266551557,
+       "half": 0.043850000000000014
+      },
+      "ip": {
+       "point": 0.30984455958549223,
+       "half": 0.03475
+      }
+     }
+    },
+    {
+     "level": "L3",
+     "cells": {
+      "judged_f1": {
+       "point": 0.36207592891760904,
+       "half": 0.02695
+      },
+      "tc_reactive": {
+       "point": 0.21665899554989013,
+       "half": 0.030899999999999997
+      },
+      "tc_proactive": {
+       "point": 0.35384374776441246,
+       "half": 0.05180000000000001
+      },
+      "ip": {
+       "point": 0.34808853118712274,
+       "half": 0.038099999999999995
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "ablation": {
+  "source": "NAACL2027/float/tab_ablation.tex (typed from the paper float; regenerate from the ablation metric script in production)",
+  "a": {
+   "title": "Utterance Understanding",
+   "cols": [
+    "FLUID",
+    "Direct Reactive"
+   ],
+   "rows": [
+    [
+     "Reactive Timely Correctness",
+     "up",
+     [
+      0.209,
+      0.21
+     ],
+     [
+      0.055,
+      0.038
+     ]
+    ],
+    [
+     "Reactive Intervention Precision",
+     "up",
+     [
+      0.224,
+      0.158
+     ],
+     [
+      0.158,
+      0.141
+     ]
+    ],
+    [
+     "Reactive Utterances / min",
+     null,
+     [
+      1.94,
+      2.99
+     ],
+     [
+      0.86,
+      0.96
+     ]
+    ],
+    [
+     "Response Rate on Unanswered Turns",
+     "down",
+     [
+      0.236,
+      0.426
+     ],
+     [
+      0.316,
+      0.405
+     ]
+    ],
+    [
+     "Speech Overlap Ratio",
+     "down",
+     [
+      0.207,
+      0.294
+     ],
+     [
+      0.153,
+      0.168
+     ]
+    ]
+   ]
+  },
+  "b": {
+   "title": "Intervention Decision",
+   "cols": [
+    "FLUID",
+    "Direct Proactive"
+   ],
+   "rows": [
+    [
+     "Proactive Timely Correctness",
+     "up",
+     [
+      0.046,
+      0.119
+     ],
+     [
+      0.062,
+      0.171
+     ]
+    ],
+    [
+     "Proactive Intervention Precision",
+     "up",
+     [
+      0.072,
+      0.02
+     ],
+     [
+      0.171,
+      0.049
+     ]
+    ],
+    [
+     "Proactive Utterances / min",
+     null,
+     [
+      1.32,
+      14.83
+     ],
+     [
+      1.55,
+      16.88
+     ]
+    ],
+    [
+     "Repetition Rate",
+     "down",
+     [
+      0.095,
+      0.619
+     ],
+     [
+      0.089,
+      0.684
+     ]
+    ],
+    [
+     "Speech Overlap Ratio",
+     "down",
+     [
+      0.207,
+      0.752
+     ],
+     [
+      0.153,
+      0.799
+     ]
+    ]
+   ]
+  }
+ }
+}

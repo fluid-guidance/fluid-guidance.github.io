@@ -1,0 +1,280 @@
+/* FLUID project page: the page's own stylesheet, loaded after the Nerfies project-page template
+   (css/bulma.min.css 0.9.4, fontawesome.all.min.css 5.15.4, academicons.min.css and nerfies.css, the template's index.css
+   verbatim). The template provides the scaffold: hero and title block, sections and containers, columns, titles,
+   buttons, footer. This file holds the page's measurements (SimLife's text scale on that template: 16 px body, 32 px
+   headings, a 48 px title, a 900 px text column, 1152 px media) and its own components: the four-layer timeline, the
+   case browser, the evaluation schematics, the framework figure, the results table.
+   The annotation colours are those of the paper's overview figure: Layer 1 (utterances) orange on light yellow,
+   instructor turns on light green, Layer 2 (actions and states) blue, Layer 3 (trigger links) green, intervention status
+   magenta, Layer 4 anchors yellow / green / red on a grey window bar. They appear only inside the figure, the timelines,
+   the chips and the charts. */
+:root {
+  --bg: #ffffff; --ink: #363636; --ink-2: #4a4a4a; --muted: #6f6f78; --rule: #e4e4e7; --tint: #f7f7f8; --panel: #fafafb;
+  --link: #3273dc; --btn: #363636; --none: #d4d4d8; --ours: #edf3fa;
+  --l1: #b45f06; --l1-fill: #fff2cc; --l1-edge: #e9c46a; --instr-fill: #e3efda; --instr-edge: #a6c892;   /* the instructor's turns in light green: the outcome of the green trigger links (Layer 3) */
+  --l2: #0b5394; --l2-fill: #e3edf8; --l2-edge: #9cbbdb; --state-fill: #e3edf8; --state-edge: #9cbbdb;
+  --dev: #0b5394; --dev-fill: #e3edf8; --l3: #38761d; --l3-fill: #e3efda; --nec: #a64d79; --nec-fill: #f4e4ed; --l4: #595959;
+  --t-early: #ffd966; --t-early-ink: #b45f06; --t-evid: #93c47d; --t-evid-ink: #38761d; --t-usr: #93c47d; --t-latest: #e06666; --t-latest-ink: #990000;
+  --win: #5b5b62;
+  --ok: #1e8e4e; --ok-fill: #dff3e6; --late: #d9900a; --late-fill: #fbecd0; --bad: #c83b2e; --bad-fill: #f9dedb;
+  --font: "Noto Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  --display: "Google Sans", "Noto Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  --mono: ui-monospace, Menlo, Consolas, monospace;
+  --measure: 900px; --wide: 1152px;   /* text blocks: the reference page's paragraph column (763–917 px at 16 px); media and visualizations: its widescreen container (1152 px; its title video is 900 px) */
+}
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; animation: none !important; } }
+body { font-family: var(--font); color: var(--ink-2); font-size: 16px; line-height: 1.55; }   /* the template's 1.5 reads tighter at this measure */
+::selection { background: #dde9f6; color: var(--ink); }
+a:hover { text-decoration: underline; text-underline-offset: 2px; }
+p { margin: 0 0 12px; }   /* paragraphs outside the template's .content blocks */
+button { font: inherit; }   /* Bulma gives buttons the system face; the page's controls use the body face */
+.button:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+q { quotes: "\201C" "\201D"; }
+sub { position: static; font-size: .72em; line-height: 0; vertical-align: -.25em; }   /* the anchor names t_evid etc.; Bulma's relative shift is not added to it */
+:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+.small { font-size: 15px; color: var(--muted); line-height: 1.5; }
+.muted { color: var(--muted); }
+.num { font-variant-numeric: tabular-nums; }
+
+/* ---- title block (the template's hero: publication-title, publication-authors, publication-links) ---- */
+.hero .publication-title { font-size: clamp(32px, 4.2vw, 48px); }   /* the template's 3 rem on wide screens, smaller on phones */
+.eqnote { color: var(--muted); margin-top: 4px; }
+.publication-links .button[aria-disabled="true"], .footer .icon-link[aria-disabled="true"] { opacity: .5; pointer-events: none; }   /* placeholders until the paper, code and data are public */
+.tldr { max-width: var(--measure); margin: 22px auto 0; font-size: 16.5px; line-height: 1.55; color: var(--ink-2); text-align: center; }
+.tldr b { color: var(--ink); }
+
+/* ---- sections: the text column inside the template's containers (is-max-desktop for prose, is-max-widescreen for media) ---- */
+.lede { max-width: var(--measure); margin: 0 auto; text-align: center; color: var(--ink-2); font-size: 16.5px; line-height: 1.55; }
+.prose { max-width: var(--measure); margin: 0 auto; font-size: 16.5px; line-height: 1.6; }
+.wide { max-width: var(--wide); margin: 0 auto; }
+.centered { text-align: center; }
+.chip { display: inline-block; font-size: 14px; font-weight: 700; padding: 0 8px; border-radius: 4px; white-space: nowrap; vertical-align: 1px; line-height: 24px; letter-spacing: .01em; }
+.chip.l1 { background: var(--l1-fill); color: var(--l1); } .chip.l1.instr { background: var(--instr-fill); color: var(--l1); }
+.chip.l2 { background: var(--l2-fill); color: var(--l2); } .chip.l2.dev { background: var(--l2-fill); color: var(--l2); } .chip.l3 { background: #fff; color: var(--l3); box-shadow: inset 0 0 0 1.5px var(--l3); }
+.chip.pol.necessary { background: var(--nec-fill); color: var(--nec); box-shadow: inset 0 0 0 1.5px var(--nec); } .chip.pol.optional { box-shadow: inset 0 0 0 1.5px var(--nec); color: var(--nec); background: #fff; }
+.chip.pol.excluded { background: #ececec; color: #666; } .chip.pol.none { background: var(--tint); color: var(--ink-2); }
+.chip.side { background: #fff; color: var(--ink-2); box-shadow: inset 0 0 0 1.5px #9a9aa3; }
+.chip.type { background: #fff; color: var(--l3); box-shadow: inset 0 0 0 1.5px var(--l3); }
+
+/* ---- demo: video, session clock, the four-layer timeline ---- */
+.vframe { max-width: var(--wide); margin: 0 auto; border-radius: 12px; overflow: hidden; background: #000; box-shadow: 0 10px 30px -12px rgba(0, 0, 0, .5); }
+.vframe video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #000; }
+.tnow { max-width: var(--wide); margin: 12px auto 6px; display: flex; gap: 14px; align-items: baseline; font-size: 17px; line-height: 1.45; }   /* as tall as its text: the timeline follows it up and down */
+.tnow.off { display: none; }   /* while the film before the minute plays */
+.tnow.off + #ttl { margin-top: 12px; }   /* a breath between the player and the timeline while the line is collapsed */
+.tnow .clock { flex: none; display: inline-flex; align-items: baseline; gap: 6px; }
+.tnow .clock b { font-family: var(--display); font-size: 26px; font-weight: 700; color: var(--ink); font-variant-numeric: tabular-nums; line-height: 1; }
+.tnow .x { min-width: 0; color: var(--ink-2); }
+.tnow .x .chip { margin-right: 6px; }
+.tnow .x b { color: var(--ink); font-weight: 600; }
+.tnow .x.muted { color: var(--muted); }
+#ttl { max-width: var(--wide); margin: 0 auto; }
+
+/* the timeline (guide_timeline.js): pixel-scaled, scrolls sideways, follows the playhead */
+.gtl { --gtl-labels: 212px; border: 1px solid var(--rule); border-radius: 12px; background: #fff; overflow: hidden; }
+.gtl-legend { display: flex; flex-wrap: wrap; align-items: center; gap: 5px 20px; padding: 8px 14px; border-bottom: 1px solid var(--rule); background: var(--panel); font-size: 13.5px; font-weight: 700; color: var(--ink); line-height: 1.3; }
+.gtl-legend .lg { display: inline-flex; align-items: center; gap: 7px; white-space: nowrap; }
+.gtl-legend .lg small { font-weight: 400; color: var(--muted); font-size: 12.5px; }
+.gtl-legend .lg sub { font-weight: 600; }
+.gtl-legend .pin { position: relative; width: 10px; height: 14px; flex: none; }
+.gtl-legend .lg-link { display: inline-flex; align-items: center; }
+.gtl-legend .lg-link svg { display: block; }
+.gtl-legend .lg-bar { display: inline-block; width: 20px; height: 5px; border-radius: 3px; background: var(--win); }
+.gtl-legend .lg-bar.optional { margin-left: 8px; background: repeating-linear-gradient(90deg, var(--win) 0 6px, transparent 6px 10px); }
+.gtl-scroll { overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch; scrollbar-width: thin; scrollbar-color: #c3c3c9 transparent; }
+.gtl-inner { display: flex; width: max-content; }
+.gtl-labels { flex: none; width: var(--gtl-labels); position: sticky; left: 0; background: #fff; z-index: 6; border-right: 1px solid var(--rule); box-shadow: 2px 0 6px -4px rgba(0, 0, 0, .25); }
+.gtl-lab { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 0 10px 0 12px; border-top: 1px solid var(--rule); }
+.gtl-lab:first-child { border-top: 0; }
+.gtl-lab .nm { font-size: 17px; font-weight: 700; line-height: 1.2; color: var(--ink); }
+.gtl-lab.ruler { background: var(--tint); } .gtl-lab.ruler .nm { font-size: 12.5px; font-weight: 600; color: var(--muted); }
+.gtl-lab.user { background: #fffaea; }
+.gtl-lab.act { background: #eef4fb; }
+.gtl-lab.win { background: #f3f3f5; }
+.gtl-lab.instr { background: #eef6e8; }
+.gtl-lab.sys { background: #f4f4f5; }
+.gtl-tracks { flex: none; position: relative; }
+.gtl-row { position: relative; border-top: 1px solid var(--rule); }
+.gtl-row:first-child { border-top: 0; }
+.gtl-row.ruler { background: var(--tint); cursor: pointer; touch-action: none; }
+.gtl-row.sys { background: #fafafb; }
+.gtick { position: absolute; top: 14px; bottom: 0; border-left: 1px solid #e0e0e5; pointer-events: none; }
+.gtick.major { top: 0; border-left-color: #c9c9d0; }
+.gtick.minute { border-left-color: #9a9aa3; }
+.gtick span { position: absolute; left: 5px; top: 3px; font-size: 12.5px; font-weight: 600; color: var(--muted); font-variant-numeric: tabular-nums; }
+.gtick.minute span { color: var(--ink); font-weight: 700; }
+.gtick.end span { left: auto; right: 6px; }
+.gblk { position: absolute; display: flex; align-items: center; padding: 0 7px 0 8px; border: 0; background: transparent; text-align: left; cursor: pointer; color: var(--ink); font: inherit; z-index: 1; transition: opacity .15s; }
+.gblk .dur { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 6px; border: 1.5px solid transparent; z-index: 0; box-sizing: border-box; transition: border-color .15s; }
+.gblk .tx { position: sticky; left: calc(var(--gtl-labels) + 8px); z-index: 1; display: block; width: max-content; max-width: 100%; }
+.gblk .tt { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; font-size: 13px; line-height: 16px; font-weight: 500; color: var(--ink); overflow-wrap: anywhere; }
+.gblk.user .dur { background: var(--l1-fill); border-color: var(--l1-edge); }
+.gblk.act .dur { background: var(--l2-fill); border-color: var(--l2-edge); }
+.gblk.instr .dur { background: var(--instr-fill); border-color: var(--instr-edge); }
+.gblk.unlinked { opacity: .62; } .gblk.unlinked .dur, .gblk.unlinked.over { border-style: dotted; }
+.gblk.sysblk .dur { background: #fff; border-color: var(--none); }
+.gblk.sysblk.correct .dur { background: var(--ok-fill); border-color: var(--ok); }
+.gblk.sysblk.mistimed .dur { background: var(--late-fill); border-color: var(--late); }
+.gblk.sysblk.wrong .dur { background: var(--bad-fill); border-color: var(--bad); }
+.gblk.cut-l .dur { border-left-style: dashed; border-top-left-radius: 0; border-bottom-left-radius: 0; }
+.gblk.cut-r .dur { border-right-style: dashed; border-top-right-radius: 0; border-bottom-right-radius: 0; }
+/* a text wider than its bar even on three lines: the box is outlined past the bar, and the bar's fill marks the time the block occupies */
+.gblk.over { border: 1.5px solid var(--none); border-radius: 6px; background: #fff; }
+.gblk.over.user { border-color: var(--l1-edge); } .gblk.over.act { border-color: var(--l2-edge); } .gblk.over.instr { border-color: var(--instr-edge); }
+.gblk.over .dur { border: 0; border-radius: 4px 0 0 4px; }
+.gblk.over.edge .dur { border-radius: 0 4px 4px 0; }
+.gblk.over.cut-r { border-right-style: dashed; border-top-right-radius: 0; border-bottom-right-radius: 0; }
+.gblk.edge { text-align: right; justify-content: flex-end; padding: 0 8px 0 7px; }   /* at the track's end the box ends with its bar instead of running past the clip */
+.gblk.edge .tx { position: relative; left: auto; }
+.gblk:hover .dur, .gblk.now .dur, .gblk.over:hover, .gblk.over.now { border-color: var(--ink); }
+.gwin { position: absolute; border-radius: 3px; background: var(--win); cursor: pointer; min-width: 4px; padding: 0; border: 0; font: inherit; overflow: visible; z-index: 1; transition: opacity .15s, background-color .15s; }
+.gwin.optional { background: repeating-linear-gradient(90deg, var(--win) 0 8px, transparent 8px 13px); }
+.gwin.open, .gwin.focus { background: var(--ink); }
+.gwin.optional.open, .gwin.optional.focus { background: repeating-linear-gradient(90deg, var(--ink) 0 8px, transparent 8px 13px); }
+.gwin .pin { position: absolute; bottom: 3px; transform: translateX(-50%); z-index: 2; }
+.gwin .wl { position: absolute; left: 0; top: 8px; white-space: nowrap; pointer-events: none; text-align: left; }
+.gwin .wl .wli { position: sticky; left: calc(var(--gtl-labels) + 8px); display: inline-flex; gap: 4px; }
+.gwin.edge .wl { left: auto; right: 0; text-align: right; } .gwin.edge .wl .wli { position: static; }
+.gwin .wl .k { font-size: 12px; font-weight: 700; padding: 0 6px; border-radius: 4px; line-height: 18px; background: #fff; letter-spacing: .01em; }
+.gwin .wl .k.type { color: var(--l3); box-shadow: inset 0 0 0 1.5px var(--l3); }
+.gwin .wl .k.pol { color: var(--nec); box-shadow: inset 0 0 0 1.5px var(--nec); }
+.gwin .wl .k.pol.necessary { background: var(--nec-fill); }
+.gwin.focus .wl .k { box-shadow: inset 0 0 0 2px currentColor; }
+/* flag pins: the anchor notation of the overview figure (an outline pin with a coloured face) */
+.pin { position: absolute; width: 11px; height: 15px; --pin-fill: #ddd; --pin-edge: #666; }
+.pin::before, .pin::after { content: ""; position: absolute; inset: 0; clip-path: polygon(0 0, 100% 0, 100% 62%, 50% 100%, 0 62%); }
+.pin::before { background: var(--pin-edge); }
+.pin::after { inset: 2px 2px 3px; background: var(--pin-fill); }
+.pin.es { --pin-fill: var(--t-early); --pin-edge: var(--t-early-ink); }
+.pin.eo, .pin.r { --pin-fill: var(--t-evid); --pin-edge: var(--t-evid-ink); }   /* t_usr is the evidence onset of a reactive intervention */
+.pin.lu { --pin-fill: var(--t-latest); --pin-edge: var(--t-latest-ink); }
+.gtl-links { position: absolute; left: 0; top: 0; pointer-events: none; z-index: 4; overflow: visible; }   /* above every block, focused or not: the current intervention's links are never hidden by an earlier block */
+.gtl-links .lk { fill: none; stroke: var(--l3); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; transition: stroke-width .15s; }
+.gtl-links .lk.optional { stroke-dasharray: 5 4; }
+.gtl-links .lk-halo { fill: none; stroke: #fff; stroke-width: 5.5; stroke-linejoin: round; stroke-linecap: round; }
+.gtl-links .lk-dot { fill: var(--l3); stroke: #fff; stroke-width: 1.5; }
+.gtl-links .lk-head { fill: var(--l3); }
+.gtl-links g { transition: opacity .15s; }
+.gtl-links g.focus .lk { stroke-width: 3; }
+.gtl-playhead { position: absolute; top: 0; bottom: 0; width: 2px; margin-left: -1px; background: var(--ink); z-index: 5; pointer-events: none; }
+.gtl-playhead::before { content: ""; position: absolute; top: 0; left: -5px; width: 0; height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent; border-top: 8px solid var(--ink); }
+.gtl.has-focus .gblk:not(.focus), .gtl.has-focus .gwin:not(.focus) { opacity: .4; }
+.gtl.has-focus .gtl-links g:not(.focus) { opacity: .22; }
+.gblk.focus { z-index: 3; } .gblk.focus .dur, .gblk.over.focus { border-color: var(--ink); border-width: 2px; box-shadow: 0 3px 8px -3px rgba(0, 0, 0, .35); }
+.gblk.over.focus .dur { border-width: 0; box-shadow: none; }
+.gblk.focus .tt { font-weight: 700; }
+.gwin.focus { z-index: 3; }
+
+/* ---- the case browser (modeling): one annotated WTaG moment at a time, its four layers under the clip, its four
+   dimensions beside it ---- */
+.cases { max-width: var(--wide); margin: 0 auto; }
+.case-tabs { display: flex; gap: 2px; border-bottom: 1px solid var(--rule); margin-bottom: 16px; }   /* Reactive / Proactive */
+.ctab { font: inherit; font-size: 17px; font-weight: 600; color: var(--ink-2); background: none; border: 0; border-bottom: 2.5px solid transparent; margin-bottom: -1px; padding: 8px 18px 10px; white-space: nowrap; cursor: pointer; }
+.ctab:hover { color: var(--ink); }
+.ctab.on { color: var(--ink); border-bottom-color: var(--ink); }
+.case-head { display: flex; align-items: center; gap: 10px 14px; margin-bottom: 14px; }
+.case-pol { flex: none; }   /* the case's necessity, beside its title */
+.case-line { flex: 0 1 auto; min-width: 0; margin: 0; font-size: 21px; line-height: 1.35; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }   /* the title alone, one line */
+.case-line .k { font-weight: 500; color: var(--ink-2); }
+.case-line b { font-weight: 700; }
+.case-nav { flex: none; margin-left: auto; display: inline-flex; align-items: center; gap: 10px; font-size: 15px; color: var(--muted); margin-top: 1px; }
+.case-nav button { width: 34px; height: 34px; padding: 0 0 3px; border: 1px solid #c9c9cf; background: #fff; border-radius: 999px; font-size: 21px; line-height: 1; color: var(--ink); cursor: pointer; }
+.case-nav button:hover { border-color: var(--ink); }
+.case-filters { display: grid; gap: 8px; margin-bottom: 20px; }
+.cf { display: flex; align-items: flex-start; gap: 6px; }   /* the label and the first choices share a line; the choices wrap beside the label, never under it */
+.cf-label { width: 100px; flex: none; padding-top: 6px; font-size: 14.5px; font-weight: 600; line-height: 1.3; color: var(--muted); }
+.cf-items { flex: 1 1 auto; min-width: 0; display: flex; flex-wrap: wrap; gap: 5px; }   /* the eleven trigger types fit one 1152 px line beside their label */
+.xf { border: 1px solid #d3d3d8; background: #fff; border-radius: 999px; padding: 4px 12px; font-size: 14.5px; font-weight: 600; color: var(--ink-2); cursor: pointer; transition: opacity .15s, border-color .15s; }
+.xf:hover { border-color: var(--ink); color: var(--ink); }
+.xf.on { background: var(--ink); color: #fff; border-color: var(--ink); }
+.case-body { display: grid; grid-template-columns: minmax(0, 2fr) minmax(300px, 1fr); grid-template-rows: auto auto auto; column-gap: 24px; align-items: start; }
+.case-video { grid-column: 1; grid-row: 1; margin: 0; box-shadow: none; border-radius: 10px; max-width: none; }   /* no auto margins: the frame fills its column */
+.case-now { grid-column: 1; grid-row: 2; margin: 8px 0 0; min-height: 0; font-size: 15.5px; }
+.case-now .clock b { font-size: 22px; }
+/* the four dimensions take exactly the height of the clip and its live line; the cards share the room, and a case whose
+   text is taller than the clip scrolls inside the column */
+.case-side-wrap { grid-column: 2; grid-row: 1 / 3; position: relative; align-self: stretch; min-height: 0; }
+.case-side { position: absolute; inset: 0; display: flex; flex-direction: column; gap: 2px; overflow-y: auto; scrollbar-width: thin; scrollbar-color: #c3c3c9 transparent; }
+.case-side .dim { flex: 1 0 auto; }
+.case-side .side-k { flex: none; margin: 0; font-size: 14.5px; color: var(--muted); }
+.case-tl { grid-column: 1 / -1; grid-row: 3; margin-top: 16px; min-width: 0; contain: inline-size; }   /* its track's width must not size the columns */
+@media (max-width: 900px) {
+  .case-body { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto auto auto auto; }
+  .case-video, .case-now, .case-side-wrap, .case-tl { grid-column: 1; }
+  .case-side-wrap { grid-row: 3; margin-top: 18px; } .case-tl { grid-row: 4; }
+  .case-side { position: static; overflow: visible; } .case-side .dim { flex: none; }
+}
+.dim { border-top: 2px solid var(--ink); padding-top: 5px; font-size: 16px; line-height: 1.45; color: var(--ink-2); }
+.dim.why { border-color: var(--l3); } .dim.whether { border-color: var(--nec); } .dim.when { border-color: var(--l4); } .dim.what { border-color: var(--l1); }
+.dim-h { display: flex; align-items: baseline; gap: 8px; margin-bottom: 1px; line-height: 1.3; }
+.dim-h b { font-size: 14.5px; letter-spacing: .06em; color: var(--ink); }
+.dim-h span { font-size: 14.5px; color: var(--muted); }
+.dim .dim-b { margin: 0; }
+.dim .kw { color: var(--ink); font-weight: 700; }   /* the label words of the four layers */
+.dim .why-type { margin-bottom: 2px; }
+.dim .anc-chip { margin: 0; padding: 0 5px 0 4px; gap: 5px; line-height: 22px; }
+.when-rows { display: grid; gap: 2px; margin-top: 1px; }
+.when-rows .wr { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.when-rows .wr > span { color: var(--ink-2); }
+.when-rows .wr.ins b { color: var(--ink); font-weight: 600; white-space: nowrap; flex: none; }
+.when-rows .wr.ins > span { min-width: 0; }   /* the relation wraps, the time never does */
+.anc-chip { display: inline-flex; align-items: center; gap: 6px; font-size: 14.5px; padding: 2px 8px 2px 6px; border-radius: 4px; background: var(--tint); white-space: nowrap; color: var(--ink); }
+.anc-chip .pin { position: relative; width: 11px; height: 15px; }
+.anc-chip sub { font-weight: 700; }
+/* ---- evaluation: a grid of the four schematics; the rows compare the conventional and the FLUID evaluation, the columns
+   reactive and proactive guidance; the conventional row is drawn quieter ---- */
+.evalg { display: grid; grid-template-columns: 1fr 1fr; column-gap: 36px; row-gap: 0; align-items: start; margin-top: 4px; }
+.evalg .rowhead { grid-column: 1 / -1; margin: 18px 0 10px; font-size: 19px; font-weight: 700; line-height: 1.3; color: var(--ink); }   /* the two evaluations are the section's own heads; the kind of guidance is named inside each figure */
+.evalg .rowhead.fluid { margin-top: 30px; }
+.evp { margin: 0; }
+.evp figcaption { font-size: 15px; color: var(--ink-2); line-height: 1.5; margin-top: 6px; }
+.eval-note { max-width: var(--measure); margin: 26px auto 0; text-align: center; font-size: 16px; color: var(--ink-2); line-height: 1.55; }
+@media (max-width: 860px) {
+  .evalg { grid-template-columns: minmax(0, 1fr); }
+  .evp + .evp { margin-top: 14px; }
+}
+.schem { width: 100%; height: auto; display: block; box-sizing: border-box; padding: 10px 12px 8px; border: 1px solid var(--rule); border-radius: 10px; background: #fff; }   /* framed like the page's figures */
+.schem text { font-family: var(--font); }
+
+/* ---- framework figure ---- */
+.figure { max-width: var(--wide); margin: 0 auto; }
+.figure img { width: 100%; height: auto; display: block; }
+.figure .cap { max-width: var(--measure); margin: 16px auto 0; font-size: 16px; color: var(--ink-2); line-height: 1.55; }
+.figure.framed img { box-sizing: border-box; padding: 14px 18px; border: 1px solid var(--rule); border-radius: 8px; background: #fff; }   /* a figure on a tinted band sits in a white panel, like the four-layer figure */
+
+/* ---- results table ---- */
+.rwrap { overflow-x: auto; max-width: var(--wide); margin: 0 auto; }
+table.res { border-collapse: collapse; width: 100%; min-width: 940px; font-size: 16px; }
+table.res th, table.res td { padding: 5px 6px; text-align: right; vertical-align: middle; border-bottom: 1px solid var(--rule); font-variant-numeric: tabular-nums; white-space: nowrap; }
+table.res thead tr:last-child th { border-bottom: 2px solid var(--ink); font-weight: 700; color: var(--ink); }
+table.res th.ds { text-align: center; font-weight: 700; border-bottom: 1px solid var(--ink); color: var(--ink); }
+table.res thead tr th.gap, table.res tbody tr td.gap { border-bottom: 0; width: 10px; padding: 0; }
+table.res td:first-child, table.res th:first-child { text-align: left; }
+table.res tr.grp td { font-style: italic; color: var(--ink-2); padding-top: 12px; border-bottom: 0; }
+table.res .ours { background: var(--ours); }
+table.res td.best { font-weight: 700; color: var(--ink); }
+table.res .half { font-size: 12.5px; color: var(--muted); margin-left: 2px; }
+table.res .arrow { color: var(--muted); margin-left: 3px; font-weight: 400; }
+table.res .mt { border-bottom: 1px dotted #9a9aa3; cursor: help; }   /* the metric's definition on hover */
+
+/* ---- BibTeX ---- */
+.bib { position: relative; }
+.bib .button { position: absolute; right: 10px; top: 10px; }
+
+#tooltip { position: fixed; z-index: 100; max-width: 480px; background: #1f1f22; color: #f5f5f2; font-size: 14px; line-height: 1.45; padding: 9px 12px; border-radius: 8px; pointer-events: none; box-shadow: 0 8px 24px -8px rgba(0, 0, 0, .5); }
+#tooltip b { color: #fff; }
+#tooltip q { color: #fff; font-style: italic; }
+#tooltip sub { font-size: .75em; }
+#tooltip .rec-s { color: #a9a9b2; font-size: 13.5px; }
+
+@media (max-width: 600px) {
+  .section, .hero-body { padding: 32px 16px; }
+  .tldr, .prose, .lede { font-size: 16px; }
+  .tnow { font-size: 16px; }
+  .gtl { --gtl-labels: 136px; } .gtl-lab { padding-left: 9px; } .gtl-lab .nm { font-size: 13.5px; }
+  .gtl-legend { gap: 4px 12px; font-size: 13px; padding: 7px 10px; } .gtl-legend .lg small { display: none; }
+  .case-head { flex-wrap: wrap; } .case-line { font-size: 18px; white-space: normal; } .cf { flex-wrap: wrap; } .cf-label { width: 100%; padding-top: 0; }
+  .ctab { font-size: 16px; padding: 8px 12px 10px; }   /* the two tabs on one line */
+  .evp .schem { padding: 8px 8px 6px 10px; } .schem text { font-size: 19px; } .schem tspan { font-size: 14px; }   /* the figures scale to the phone's width; their type is set larger to stay readable */
+}
